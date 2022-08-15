@@ -1,0 +1,39 @@
+:root {
+	--background: #F4F8FB;
+	--profile-name-color: #001357;
+	--profile-role-color: #8325CE;
+	--profile-des-hsl-color :#006F68;
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: var(--background);
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+section {
+	position: relative
+}
+.light {
+	font-weight: 300;
+}
+
+.regular {
+	font-weight: 400;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.margin-0 {
+	margin: 0;
+}
