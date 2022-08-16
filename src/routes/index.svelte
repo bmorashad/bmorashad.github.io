@@ -1,4 +1,5 @@
 <script>
+	import Skills from '$lib/Skills.svelte';
 	import profilePic from '$lib/assets/profile_pic.png';
 	import gitlab from '$lib/assets/gitlab.svg';
 	import github from '$lib/assets/github.svg';
@@ -6,7 +7,20 @@
 	import medium from '$lib/assets/medium.svg';
 	import hello from '$lib/assets/hello.svg';
 	import scroll from '$lib/assets/scroll-down.gif';
-	import sun from '$lib/assets/sun.png';
+	import scrollDark from '$lib/assets/scroll-down-dark.gif';
+	import sun from '$lib/assets/sun.svg';
+	import moon from '$lib/assets/moon.svg';
+
+	let darkMode = false;
+	let toggleMode = () => {
+		let dataTheme = document.documentElement.getAttribute('data-theme');
+		if (dataTheme != 'dark') {
+			document.documentElement.setAttribute('data-theme', 'dark');
+		} else {
+			document.documentElement.setAttribute('data-theme', '');
+		}
+		darkMode = !darkMode;
+	};
 </script>
 
 <div class="nav-container">
@@ -14,29 +28,33 @@
 		<a link href="#skills" class="menu-link">Skills</a>
 		<a link href="#experience" class="menu-link">Experience</a>
 		<a link href="#projects" class="menu-link">Projects</a>
+		<div class="theme-toggle" on:click={toggleMode}>
+			{#if !darkMode}
+				<img class="dark-theme-toggle" src={moon} alt="" />
+			{:else}
+				<img class="light-theme-toggle" src={sun} alt="" />
+			{/if}
+		</div>
 	</nav>
 </div>
 
 <section class="profile-section">
 	<div class="profile-container">
 		<div class="profile-wrapper">
-			<div class="profile-picture-container">
-				<div class="profile-picture-clip">
-					<div class="profile-picture-wrapper">
-						<img class="profile-pic" src={profilePic} alt="profile" />
-					</div>
+			<div class="profile-picture-clip">
+				<div class="profile-picture-wrapper">
+					<img class="profile-pic" src={profilePic} alt="profile" />
 				</div>
-				<div class="profile-picture-bg" />
 			</div>
 			<div class="profile-detail">
 				<h4 class="profile-role regular margin-0">Software Engineer</h4>
 				<h1 class="profile-name semi-bold">Hello, I'm Rashad.</h1>
 				<p class="profile-description light">
 					<span class="profile-des-left"
-						>I'm a <span class="profile-des-hsl medium">Linux</span> enthusiast with a
+						>I'm a <span class="profile-des-hsl regular">Linux</span> enthusiast with a
 						<span>
 							<br /><span class="profile-des-right"
-								>knack for <span class="profile-des-hsl medium">backend development.</span><span
+								>knack for <span class="profile-des-hsl regular">backend development.</span><span
 								/></span
 							></span
 						></span
@@ -66,7 +84,11 @@
 			</div>
 		</div>
 		<div class="scroll-dwn">
-			<img src={scroll} alt="gitlab" />
+			{#if !darkMode}
+				<img src={scroll} alt="gitlab" />
+			{:else}
+				<img src={scrollDark} alt="gitlab" />
+			{/if}
 		</div>
 	</div>
 	<div class="profile-wave-devider display-none">
@@ -82,9 +104,30 @@
 			/>
 		</svg>
 	</div>
+	<div class="content">
+		<Skills />
+	</div>
 </section>
 
 <style>
+	.light-theme-toggle {
+		width: 3rem;
+		opacity: 0.95;
+		cursor: pointer;
+		margin-left: 1rem;
+	}
+	.light-theme-toggle:hover {
+		opacity: 1;
+	}
+	.dark-theme-toggle {
+		width: 3rem;
+		opacity: 0.95;
+		cursor: pointer;
+		margin-left: 1rem;
+	}
+	.dark-theme-toggle:hover {
+		opacity: 1;
+	}
 	.scroll-dwn {
 		grid-area: 3 / 2 / 4 / 3;
 		justify-self: center;
@@ -94,7 +137,7 @@
 		width: 10rem;
 	}
 	.nav-container {
-		height: 50px;
+		height: 70px;
 		/* display: flex; */
 		/* justify-content: center; */
 	}
@@ -104,8 +147,11 @@
 		z-index: 1;
 		grid-area: 1 / 1 / 4 / 4;
 		align-self: center;
-		background: #0075ff;
+		background: var(--navbar-bg-color);
 		align-items: center;
+		box-shadow: var(--shadow-elevation-low);
+		border-bottom: 3px solid var(--navbar-border-color);
+		height: 100%;
 	}
 	.menu-link {
 		/* border-radius: 21px; */
@@ -113,12 +159,12 @@
 		font-size: 2rem;
 		font-weight: 700;
 		/* color: #0075ff; */
-		color: #e9f3ff;
+		color: var(--menu-link-color);
 		padding: 1rem 2.6rem;
 		text-decoration: none;
 	}
 	.menu-link:hover {
-		color: #fff;
+		color: var(--menu-link-hover-color);
 		text-decoration: underline;
 		transition: 0.1s;
 	}
@@ -126,7 +172,7 @@
 		/* height: 100%; */
 		/* background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%), #F4F8FB; */
 		/* margin-top: 10rem; */
-		padding-top: 10rem;
+		padding-top: 18rem;
 	}
 	.profile-container {
 		display: grid;
@@ -191,45 +237,45 @@
 	.gitlab {
 		color: var(--profile-link-gitlab-color);
 		background: var(--profile-link-gitlab-bg-color);
-		border: 2px solid var(--profile-link-gitlab-color);
+		border: var(--profile-link-gitlab-border);
 	}
 	.github {
 		color: var(--profile-link-github-color);
 		background: var(--profile-link-github-bg-color);
-		border: 2px solid var(--profile-link-github-color);
+		border: var(--profile-link-github-border);
 	}
 	.linkedin {
 		color: var(--profile-link-linkedin-color);
 		background: var(--profile-link-linkedin-bg-color);
-		border: 2px solid var(--profile-link-linkedin-color);
+		border: var(--profile-link-linkedin-border);
 	}
 	.medium-blog {
 		color: var(--profile-link-medium-color);
 		background: var(--profile-link-medium-bg-color);
-		border: 2px solid var(--profile-link-medium-color);
+		border: var(--profile-link-medium-border);
 	}
 	.profile-link:hover {
 		transition: 0.2s;
 	}
 
 	.gitlab:hover {
-		color: #fff;
+		color: var(--social-link-hover-color);
 		background: var(--profile-link-gitlab-color);
 		border: 2px solid var(--profile-link-gitlab-color);
 	}
 	.github:hover {
-		color: #fff;
+		color: var(--social-link-hover-color);
 		background: var(--profile-link-github-color);
 		border: 2px solid var(--profile-link-github-color);
 	}
 	.linkedin:hover {
+		color: var(--social-link-hover-color);
 		background: var(--profile-link-linkedin-color);
-		color: #fff;
 		border: 2px solid var(--profile-link-linkedin-color);
 	}
 	.medium-blog:hover {
+		color: var(--social-link-hover-color);
 		background: var(--profile-link-medium-color);
-		color: #fff;
 		border: 2px solid var(--profile-link-medium-color);
 	}
 
@@ -240,6 +286,7 @@
 
 	.profile-des-hsl {
 		color: var(--profile-des-hsl-color);
+		/* background: #fff; */
 	}
 	.profile-des-right {
 		padding-left: 6rem;
@@ -254,7 +301,7 @@
 		margin-right: 3rem;
 	}
 	.profile-role {
-		font-size: 2rem;
+		font-size: 2.2rem;
 		color: var(--profile-role-color);
 	}
 	.profile-name {
@@ -295,40 +342,10 @@
 		padding-top: 1vh;
 		padding-bottom: 1vh;
 	}
-	.profile-picture-container {
-		position: relative;
-	}
-	.profile-picture-bg {
-		background: linear-gradient(
-				180deg,
-				rgba(6, 202, 84, 0.2) 0%,
-				rgba(140, 255, 248, 0.2) 33.33%,
-				rgba(255, 0, 184, 0.26) 66.67%,
-				rgba(1, 179, 255, 0.2) 100%
-			),
-			linear-gradient(
-				180deg,
-				#2dfff2 -83.05%,
-				rgba(63, 243, 255, 0.796875) 30.63%,
-				rgba(135, 147, 255, 0) 126.82%
-			);
-	}
 	.profile-picture-clip {
 		padding: 50px 50px 0 50px;
 		clip-path: circle(110px at center);
-		/* background: linear-gradient(
-				180deg,
-				rgba(6, 202, 84, 0.2) 0%,
-				rgba(140, 255, 248, 0.2) 33.33%,
-				rgba(255, 0, 184, 0.26) 66.67%,
-				rgba(1, 179, 255, 0.2) 100%
-			),
-			linear-gradient(
-				180deg,
-				#2dfff2 -83.05%,
-				rgba(63, 243, 255, 0.796875) 30.63%,
-				rgba(135, 147, 255, 0) 126.82%
-			); */
+		background: var(--profile-picture-clip-bg-gradient-color);
 	}
 
 	.profile-picture-wrapper {
