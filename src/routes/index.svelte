@@ -9,9 +9,9 @@
 </script>
 <section class="profile-section">
 	<div class="profile-container">
-		<!-- <div class="theme-mode">
+		<div class="theme-mode">
 			<img src={sun} alt="theme-mode">
-		</div> -->
+		</div> 
 		<div class="profile-wrapper">
 			<div class="profile-link-container">
 				<div class="profile-link">
@@ -55,11 +55,11 @@
 				<img src={hello} alt="hello">
 			</div>
 		</div>
-			<div class="profile-btn-container">
-				<button class="profile-btn profile-btn-skills">Skills</button>
-				<button class="profile-btn profile-btn-experience">Experience</button>
-				<button class="profile-btn profile-btn-projects">Projects</button>
-			</div>
+		<div class="profile-btn-container">
+			<button class="profile-btn profile-btn-skills">Skills</button>
+			<button class="profile-btn profile-btn-experience">Experience</button>
+			<button class="profile-btn profile-btn-projects">Projects</button>
+		</div>
 	</div>
 	<div class="profile-wave-devider">
 		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -72,38 +72,62 @@
 		display: flex;
 		justify-content: center;
 		z-index: 1;
+		/* grid-area: 3 / 2 / 4 / 3; */
+		grid-area: 2 / 2 / 3 / 3;
+		align-self: end;
+		margin-left: 120px;
 	}
 	.profile-btn {
-
+		box-shadow: 4px 4px 9px rgba(0, 73, 99, 0.2);
+		border-radius: 21px;
+		padding: 8px 30px;
+		font-size: 20px;
+		font-weight: 500;
+		border: none;
+		/* border: 1px solid #f8f8f8; */
 	}
 	.profile-btn-skills {
+		background: #EAF8FF;
+		color: #009583;
 
 	}
 	.profile-btn-experience {
+		background: #13A1CE;
+		color: #fff;
+		margin-right: 45px;
+		margin-left: 45px;
 	}
 	.profile-btn-projects {
+		color:#8B70FF;
+		background: #F8EFFF;
 
 	}
 	.profile-section {
 		background: linear-gradient(180deg, rgba(61, 220, 255, 0.28) 0%, rgba(0, 97, 118, 0) 125.79%);
 	}
 	.profile-container {
-		display: flex;
-		flex-direction: column
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: repeat(3, auto);
+		padding-top: 50px;
+		padding-bottom: 180px;
 	}
 	.theme-mode {
 		/* display: flex; */
 		/* justify-content: end; */
-		right: 5rem;
-		top: 3rem;
-
-		position: absolute;
+		/* right: 5rem; */
+		/* top: 3rem; */
+		/* position: absolute; */
+		/* grid-area: 1 / 2 / 2 / 3; */
+		grid-area: 2 / 2 / 3 / 3;
+		justify-self: end;
+		/* align-self: center; */
 	}
 	.theme-mode img {
 		width: 4rem;
 	}
 	.profile-hello {
-		margin-left: 13rem;
+		/* margin-left: 13rem; */
 	}
 	.profile-hello img {
 		width: 100%;
@@ -114,6 +138,8 @@
 		width: 2.9rem;
 	}
 	.profile-link-container {
+		display: flex;
+		flex-direction: column;
 		margin-right: 9rem;
 	}
 	.profile-link-container > * {
@@ -121,10 +147,6 @@
 	}
 	.profile-link:last-child {
 		margin-bottom: 0;
-	}
-	.profile-link-container {
-		display: flex;
-		flex-direction: column;
 	}
 	.profile-des-hsl {
 		color: var(--profile-des-hsl-color);
@@ -136,7 +158,7 @@
 		font-size: 2.2rem;
 	}
 	.profile-detail {
-		padding: 0 0 0 8rem;
+		padding: 0 10rem 6rem 10rem;
 	}
 	.profile-role {
 		font-size: 2rem;
@@ -177,8 +199,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		/* padding-top: 50vh; */
-		/* padding-bottom: 50vh; */
+		grid-area: 2 / 2 / 3 / 3;
+		padding-top: 150px;
+		padding-bottom: 70px;
 	}
 
 
