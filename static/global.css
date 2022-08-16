@@ -1,8 +1,23 @@
 :root {
 	--background: #F4F8FB;
 	--profile-name-color: #001357;
-	--profile-role-color: #8325CE;
-	--profile-des-hsl-color :#006F68;
+	--profile-role-color: #5C6DFF;
+	--profile-des-hsl-color :#454545;
+	--profile-des-color:#454545;
+	--profile-link-gitlab-color: #FC6D26;
+	--profile-link-github-color: #231E1B;
+	--profile-link-linkedin-color: #2867B2;
+	--profile-link-medium-color: #000;
+
+	--profile-link-gitlab-bg-color: rgba(252, 109, 38, 0.19);
+	--profile-link-github-bg-color: rgba(35, 30, 27, 0.19);
+	--profile-link-linkedin-bg-color: rgba(40, 103, 178, 0.19);
+	--profile-link-medium-bg-color: rgba(0, 0, 0, 0.19);
+}
+* {
+	box-sizing: border-box;	
+	padding: 0;
+	margin: 0;
 }
 
 html {
@@ -10,9 +25,9 @@ html {
 	font-family: 'Lexend Deca', sans-serif;
 }
 body {
-	padding: 0;
-	margin: 0;
-	background-color: var(--background);
+	height: 100vh;
+	/* background-color: var(--background); */
+		background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%), #F4F8FB;
 }
 button {
 	font-family: 'Lexend Deca', sans-serif;
