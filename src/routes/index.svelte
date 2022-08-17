@@ -53,7 +53,7 @@
 					<h1 class="profile-name semi-bold">Hello, I'm Rashad.</h1>
 					<p class="profile-description light">
 						<span class="profile-des-left"
-							>I'm a <span class="profile-des-hsl regular">Linux</span> enthusiast with a
+							><span class="profile-des-hsl regular">Linux & OSS</span> enthusiast with a
 							<span>
 								<br /><span class="profile-des-right"
 									>knack for <span class="profile-des-hsl regular">backend development.</span><span
@@ -111,7 +111,7 @@
 <style>
 	.light-theme-toggle {
 		width: 3rem;
-		opacity: 0.95;
+		opacity: 0.85;
 		cursor: pointer;
 		margin-left: 1rem;
 	}
@@ -177,7 +177,7 @@
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
 		grid-template-rows: minmax(500px, auto) minmax(200px, auto);
-		height: calc(100vh - 70px);
+		height: calc(100vh - 80px);
 		min-height: 650px;
 		/* padding-top: 50px; */
 		/* padding-bottom: 180px; */
@@ -215,21 +215,19 @@
 	.profile-link img {
 		margin-right: 1rem;
 	}
-	.profile-link {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-	}
 	.profile-link img {
 		width: 2.2rem;
 	}
 	.profile-link {
-		padding: 0.5rem;
-		padding-right: 1.5rem;
+		padding: 0.6rem;
+		padding-right: 1.7rem;
 		margin-right: 2rem;
 		border-radius: 5px;
 		font-weight: 500;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
 	}
 	.profile-link:last-child {
 		margin-right: 0;
@@ -260,24 +258,24 @@
 	}
 
 	.gitlab:hover {
-		color: var(--social-link-hover-color);
-		background: var(--profile-link-gitlab-color);
-		border: 2px solid var(--profile-link-gitlab-color);
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-gitlab-bg-color-hover);
+		border: var(--profile-link-gitlab-border-hover);
 	}
 	.github:hover {
-		color: var(--social-link-hover-color);
-		background: var(--profile-link-github-color);
-		border: 2px solid var(--profile-link-github-color);
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-github-bg-color-hover);
+		border: var(--profile-link-github-border-hover);
 	}
 	.linkedin:hover {
-		color: var(--social-link-hover-color);
-		background: var(--profile-link-linkedin-color);
-		border: 2px solid var(--profile-link-linkedin-color);
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-linkedin-bg-color-hover);
+		border: var(--profile-link-linkedin-border-hover);
 	}
 	.medium-blog:hover {
-		color: var(--social-link-hover-color);
-		background: var(--profile-link-medium-color);
-		border: 2px solid var(--profile-link-medium-color);
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-medium-bg-color-hover);
+		border: var(--profile-link-medium-border-hover);
 	}
 
 	.profile-link:active {
@@ -361,6 +359,7 @@
 		width: 100%;
 		max-width: calc(9vw + 40px);
 		min-width: 190px;
+		filter: var(--profile-picture-filter);
 		/* border-radius: 50%; */
 	}
 </style>

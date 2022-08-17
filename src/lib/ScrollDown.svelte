@@ -1,5 +1,7 @@
-<div class="scroll-container">
-	<div class="scroller" />
+<div class="flex flex-direction-column justify-center">
+	<div class="scroll-container">
+		<div class="scroller" />
+	</div>
 </div>
 
 <style>
@@ -9,6 +11,8 @@
 		border: 3px solid var(--scroll-down-color1);
 		border-radius: 20px;
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.scroller {

@@ -13,15 +13,32 @@
 	--profile-link-linkedin-color: #2867b2;
 	--profile-link-medium-color: #000;
 
-	--profile-link-gitlab-bg-color: rgba(252, 109, 38, 0.19);
-	--profile-link-github-bg-color: rgba(35, 30, 27, 0.19);
-	--profile-link-linkedin-bg-color: rgba(40, 103, 178, 0.19);
-	--profile-link-medium-bg-color: rgba(0, 0, 0, 0.19);
+	--profile-link-gitlab-bg-color: rgba(252, 109, 38, 0.1);
+	--profile-link-github-bg-color: rgba(35, 30, 27, 0.1);
+	--profile-link-linkedin-bg-color: rgba(40, 103, 178, 0.1);
+	--profile-link-medium-bg-color: rgba(0, 0, 0, 0.1);
 
 	--profile-link-gitlab-border: 2px solid var(--profile-link-gitlab-color);
 	--profile-link-github-border: 2px solid var(--profile-link-github-color);
 	--profile-link-linkedin-border: 2px solid var(--profile-link-linkedin-color);
 	--profile-link-medium-border: 2px solid var(--profile-link-medium-color);
+
+	--profile-link-color-hover: #fff;
+
+	/* --profile-link-gitlab-color-hover: #fc6d26;
+	--profile-link-github-color-hover: #231e1b;
+	--profile-link-linkedin-color-hover: #2867b2;
+	--profile-link-medium-color-hover: #000; */
+
+	--profile-link-gitlab-bg-color-hover: rgba(252, 109, 38, 1);
+	--profile-link-github-bg-color-hover: rgba(35, 30, 27, 1);
+	--profile-link-linkedin-bg-color-hover: rgba(40, 103, 178, 1);
+	--profile-link-medium-bg-color-hover: rgba(0, 0, 0, 1);
+
+	--profile-link-gitlab-border-hover: 2px solid var(--profile-link-gitlab-color);
+	--profile-link-github-border-hover: 2px solid var(--profile-link-github-color);
+	--profile-link-linkedin-border-hover: 2px solid var(--profile-link-linkedin-color);
+	--profile-link-medium-border-hover: 2px solid var(--profile-link-medium-color);
 
 	--navbar-bg-color: #0075ff;
 	--navbar-border-color: #90e6ff;
@@ -31,6 +48,7 @@
 
 	--social-link-hover-color: #fff;
 
+	--content-title-hsl-color: #0094ff;
 	--content-title-color: #3b5462;
 	--content-des-color: #3b5462;
 
@@ -47,11 +65,26 @@
 			rgba(63, 243, 255, 0.796875) 30.63%,
 			rgba(135, 147, 255, 0) 126.82%
 		);
+	--profile-picture-filter: none;
+	--profile-picture-filter: brightness(1.2);
+	/* --profile-picture-clip-bg-gradient-color: linear-gradient(
+			180deg,
+			rgb(6 202 84 / 75%) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgb(255 0 184 / 44%) 66.67%,
+			rgb(1 114 255 / 63%) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		); */
 
-	--skill-tag-bg-color: #fff;
-	--skill-tag-border: 2px solid #b8d9ff;
+	--skill-tag-bg-color: rgba(255, 255, 255, 0.6);
+	--skill-tag-border: 2px solid #7bb8ff;
 	--skill-tag-color: #00209e;
-	--skill-tag-box-shadow: 0px 4px 4px #c7ecff;
+	/* --skill-tag-box-shadow: 0px 4px 4px #c7ecff; */
 
 	--scroll-down-color1: #005230;
 	--scroll-down-color2: #1c4591;
@@ -78,25 +111,43 @@
 }
 :root[data-theme='dark'] {
 	--background: #172731;
-	--profile-name-color: #fff;
-	--profile-role-color: #b961ff;
-	--profile-des-hsl-color: #d7e7f0;
-	--profile-des-color: #d7e7f0;
+	--background: #172531;
+	--profile-name-color: #e6fdff;
+	--profile-role-color: #ff71fb;
+	--profile-des-hsl-color: #e6fdff;
+	--profile-des-color: #e6fdff;
 
-	--profile-link-gitlab-color: #ffcbb1;
-	--profile-link-github-color: #cabbb1;
-	--profile-link-linkedin-color: #57a4ff;
-	--profile-link-medium-color: #d7d7d7;
+	--profile-link-gitlab-color: #ffdfcf;
+	--profile-link-github-color: #ffefe7;
+	--profile-link-linkedin-color: #c7e0ff;
+	--profile-link-medium-color: #e3e3e3;
 
-	--profile-link-gitlab-bg-color: rgba(255, 218, 200, 0.19);
-	--profile-link-github-bg-color: rgba(174, 162, 154, 0.19);
-	--profile-link-linkedin-bg-color: rgba(149, 197, 255, 0.19);
-	--profile-link-medium-bg-color: rgba(194, 194, 194, 0.19);
+	--profile-link-gitlab-bg-color: rgba(70, 30, 10, 1);
+	--profile-link-github-bg-color: rgba(38, 32, 29, 1);
+	--profile-link-linkedin-bg-color: rgba(18, 48, 82, 1);
+	--profile-link-medium-bg-color: rgba(40, 40, 40, 1);
 
-	--profile-link-gitlab-border: 2px solid rgba(194, 194, 194, 0);
-	--profile-link-github-border: 2px solid rgba(194, 194, 194, 0);
-	--profile-link-linkedin-border: 2px solid rgba(194, 194, 194, 0);
-	--profile-link-medium-border: 2px solid rgba(194, 194, 194, 0);
+	--profile-link-gitlab-border: 2px solid #8f3c13;
+	--profile-link-github-border: 2px solid #4a403a;
+	--profile-link-linkedin-border: 2px solid #1d4c85;
+	--profile-link-medium-border: 2px solid #444444;
+
+	--profile-link-color-hover: #fff;
+
+	/* --profile-link-gitlab-color-hover: #fc6d26;
+	--profile-link-github-color-hover: #231e1b;
+	--profile-link-linkedin-color-hover: #2867b2;
+	--profile-link-medium-color-hover: #000; */
+
+	--profile-link-gitlab-bg-color-hover: #8f3c13;
+	--profile-link-github-bg-color-hover: #4a403a;
+	--profile-link-linkedin-bg-color-hover: #1d4c85;
+	--profile-link-medium-bg-color-hover: #444444;
+
+	--profile-link-gitlab-border-hover: 2px solid #8f3c13;
+	--profile-link-github-border-hover: 2px solid #4a403a;
+	--profile-link-linkedin-border-hover: 2px solid #1d4c85;
+	--profile-link-medium-border-hover: 2px solid #444444;
 
 	--navbar-bg-color: #003d63;
 	--navbar-border-color: #00c1aa;
@@ -106,12 +157,16 @@
 
 	--social-link-hover-color: #fff;
 
+	--content-title-hsl-color: #d38dff;
+	--content-title-color: #e6f6ff;
+	--content-des-color: #e6f6ff;
+
 	--profile-picture-clip-bg-gradient-color: linear-gradient(
 			180deg,
-			rgba(6, 202, 84, 0.2) 0%,
+			rgb(6 202 84 / 75%) 0%,
 			rgba(140, 255, 248, 0.2) 33.33%,
-			rgba(255, 0, 184, 0.26) 66.67%,
-			rgba(1, 179, 255, 0.2) 100%
+			rgb(255 0 184 / 44%) 66.67%,
+			rgb(1 114 255 / 63%) 100%
 		),
 		linear-gradient(
 			180deg,
@@ -120,8 +175,16 @@
 			rgba(135, 147, 255, 0) 126.82%
 		);
 
-	--scroll-down-color1: #567669;
-	--scroll-down-color2: #4f8bd7;
+	--profile-picture-filter: brightness(1.2);
+
+	--skill-tag-bg-color: rgb(0 26 42 / 32%);
+	--skill-tag-border: 2px solid #4b788e;
+	--skill-tag-color: #f8fcff;
+	/* --skill-tag-box-shadow: 0px 4px 4px #000000; */
+	--skill-tag-box-shadow: 0px 0px 0px #c7ecff;
+
+	--scroll-down-color1: #62e7b1;
+	--scroll-down-color2: #afd2ff;
 
 	--shadow-color: 204deg 56% 3%;
 	--shadow-elevation-low: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
@@ -192,7 +255,7 @@ section {
 }
 
 .content {
-	padding: 0px 10vw;
+	padding: 0px clamp(10px, 15vw, 150px);
 }
 
 .content-title {
@@ -207,7 +270,7 @@ section {
 -webkit-text-fill-color: transparent;
 background-clip: text;
 text-fill-color: transparent; */
-	color: #0094ff;
+	color: var(--content-title-hsl-color);
 	font-weight: 700;
 }
 
@@ -226,4 +289,11 @@ text-fill-color: transparent; */
 }
 .items-center {
 	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+
+.flex-direction-column {
+	flex-direction: column;
 }
