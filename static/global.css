@@ -1,13 +1,16 @@
 :root {
-	--background: linear-gradient(180deg, rgb(157 241 255 / 28%) 0%, rgb(133 203 255 / 10%) 100%), #F4F8FB;
+	--background: linear-gradient(180deg, rgb(202 244 251 / 28%) 0%, rgb(133 203 255 / 10%) 100%),
+		#f4f8fb;
+	--background: linear-gradient(180deg, rgb(202 244 251 / 28%) 0%, rgb(229 244 255 / 10%) 100%),
+		#f4f8fb;
 	--profile-name-color: #001357;
-	--profile-role-color: #5C6DFF;
-	--profile-des-hsl-color :#001357;
-	--profile-des-color:#001357;
+	--profile-role-color: #5c6dff;
+	--profile-des-hsl-color: #001357;
+	--profile-des-color: #001357;
 
-	--profile-link-gitlab-color: #FC6D26;
-	--profile-link-github-color: #231E1B;
-	--profile-link-linkedin-color: #2867B2;
+	--profile-link-gitlab-color: #fc6d26;
+	--profile-link-github-color: #231e1b;
+	--profile-link-linkedin-color: #2867b2;
 	--profile-link-medium-color: #000;
 
 	--profile-link-gitlab-bg-color: rgba(252, 109, 38, 0.19);
@@ -24,37 +27,45 @@
 	--navbar-border-color: #90e6ff;
 
 	--menu-link-color: #e9f3ff;
-	--menu-link-hover-color: #fff; 
+	--menu-link-hover-color: #fff;
 
 	--social-link-hover-color: #fff;
 
+	--content-title-color: #3b5462;
+	--content-des-color: #3b5462;
+
 	--profile-picture-clip-bg-gradient-color: linear-gradient(
-				180deg,
-				rgba(6, 202, 84, 0.2) 0%,
-				rgba(140, 255, 248, 0.2) 33.33%,
-				rgba(255, 0, 184, 0.26) 66.67%,
-				rgba(1, 179, 255, 0.2) 100%
-			),
-			linear-gradient(
-				180deg,
-				#2dfff2 -83.05%,
-				rgba(63, 243, 255, 0.796875) 30.63%,
-				rgba(135, 147, 255, 0) 126.82%
-			);
+			180deg,
+			rgba(6, 202, 84, 0.2) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgba(255, 0, 184, 0.26) 66.67%,
+			rgba(1, 179, 255, 0.2) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		);
+
+	--skill-tag-bg-color: #fff;
+	--skill-tag-border: 2px solid #b8d9ff;
+	--skill-tag-color: #00209e;
+	--skill-tag-box-shadow: 0px 4px 4px #c7ecff;
+
+	--scroll-down-color1: #005230;
+	--scroll-down-color2: #1c4591;
 
 	--shadow-color: 196deg 20% 63%;
-	--shadow-elevation-low:
-		-0.1px 1px 0.9px hsl(var(--shadow-color) / 0.48),
+	--shadow-elevation-low: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.48),
 		-0.1px 1.5px 1.4px -1.9px hsl(var(--shadow-color) / 0.37),
 		-0.3px 3.9px 3.7px -3.7px hsl(var(--shadow-color) / 0.27);
-	--shadow-elevation-medium:
-		-0.1px 1px 0.9px hsl(var(--shadow-color) / 0.4),
+	--shadow-elevation-medium: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.4),
 		-0.2px 1.9px 1.8px -0.9px hsl(var(--shadow-color) / 0.35),
 		-0.4px 4.1px 3.9px -1.9px hsl(var(--shadow-color) / 0.29),
 		-0.8px 9.4px 8.8px -2.8px hsl(var(--shadow-color) / 0.24),
 		-1.7px 19.3px 18.2px -3.7px hsl(var(--shadow-color) / 0.19);
-	--shadow-elevation-high:
-		-0.1px 1px 0.9px hsl(var(--shadow-color) / 0.37),
+	--shadow-elevation-high: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.37),
 		-0.2px 2.8px 2.6px -0.4px hsl(var(--shadow-color) / 0.35),
 		-0.4px 5px 4.7px -0.8px hsl(var(--shadow-color) / 0.32),
 		-0.7px 8.2px 7.7px -1.2px hsl(var(--shadow-color) / 0.3),
@@ -68,15 +79,14 @@
 :root[data-theme='dark'] {
 	--background: #172731;
 	--profile-name-color: #fff;
-	--profile-role-color: #B961FF;
-	--profile-des-hsl-color :#D7E7F0;
-	--profile-des-color:#D7E7F0;
+	--profile-role-color: #b961ff;
+	--profile-des-hsl-color: #d7e7f0;
+	--profile-des-color: #d7e7f0;
 
-
-	--profile-link-gitlab-color: #FFCBB1;
-	--profile-link-github-color: #CABBB1;
-	--profile-link-linkedin-color: #57A4FF;
-	--profile-link-medium-color: #D7D7D7;
+	--profile-link-gitlab-color: #ffcbb1;
+	--profile-link-github-color: #cabbb1;
+	--profile-link-linkedin-color: #57a4ff;
+	--profile-link-medium-color: #d7d7d7;
 
 	--profile-link-gitlab-bg-color: rgba(255, 218, 200, 0.19);
 	--profile-link-github-bg-color: rgba(174, 162, 154, 0.19);
@@ -88,53 +98,53 @@
 	--profile-link-linkedin-border: 2px solid rgba(194, 194, 194, 0);
 	--profile-link-medium-border: 2px solid rgba(194, 194, 194, 0);
 
-	--navbar-bg-color: #003D63;
-	--navbar-border-color: #00C1AA;
+	--navbar-bg-color: #003d63;
+	--navbar-border-color: #00c1aa;
 
-	--menu-link-color: #00BF7A;
-	--menu-link-hover-color: #00DA8B; 
+	--menu-link-color: #00bf7a;
+	--menu-link-hover-color: #00da8b;
 
 	--social-link-hover-color: #fff;
 
 	--profile-picture-clip-bg-gradient-color: linear-gradient(
-				180deg,
-				rgba(6, 202, 84, 0.2) 0%,
-				rgba(140, 255, 248, 0.2) 33.33%,
-				rgba(255, 0, 184, 0.26) 66.67%,
-				rgba(1, 179, 255, 0.2) 100%
-			),
-			linear-gradient(
-				180deg,
-				#2dfff2 -83.05%,
-				rgba(63, 243, 255, 0.796875) 30.63%,
-				rgba(135, 147, 255, 0) 126.82%
-			);
+			180deg,
+			rgba(6, 202, 84, 0.2) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgba(255, 0, 184, 0.26) 66.67%,
+			rgba(1, 179, 255, 0.2) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		);
 
-  --shadow-color: 204deg 56% 3%;
-  --shadow-elevation-low:
-    0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
-    0.4px 0.9px 1px -1.7px hsl(var(--shadow-color) / 0.59),
-    1.3px 2.5px 2.8px -3.4px hsl(var(--shadow-color) / 0.45);
-  --shadow-elevation-medium:
-    0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.6),
-    0.6px 1.2px 1.3px -0.9px hsl(var(--shadow-color) / 0.54),
-    1.3px 2.7px 2.9px -1.7px hsl(var(--shadow-color) / 0.47),
-    3px 6.1px 6.7px -2.6px hsl(var(--shadow-color) / 0.4),
-    6.3px 12.5px 13.8px -3.4px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-high:
-    0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.56),
-    1.2px 2.3px 2.5px -0.4px hsl(var(--shadow-color) / 0.53),
-    2.2px 4.3px 4.7px -0.8px hsl(var(--shadow-color) / 0.5),
-    3.6px 7.1px 7.8px -1.1px hsl(var(--shadow-color) / 0.47),
-    5.7px 11.3px 12.4px -1.5px hsl(var(--shadow-color) / 0.44),
-    8.8px 17.6px 19.3px -1.9px hsl(var(--shadow-color) / 0.41),
-    13.2px 26.4px 29px -2.3px hsl(var(--shadow-color) / 0.38),
-    19.3px 38.5px 42.3px -2.7px hsl(var(--shadow-color) / 0.34),
-    27.3px 54.5px 59.9px -3.1px hsl(var(--shadow-color) / 0.31),
-    37.5px 75px 82.4px -3.4px hsl(var(--shadow-color) / 0.28);
+	--scroll-down-color1: #567669;
+	--scroll-down-color2: #4f8bd7;
+
+	--shadow-color: 204deg 56% 3%;
+	--shadow-elevation-low: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
+		0.4px 0.9px 1px -1.7px hsl(var(--shadow-color) / 0.59),
+		1.3px 2.5px 2.8px -3.4px hsl(var(--shadow-color) / 0.45);
+	--shadow-elevation-medium: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.6),
+		0.6px 1.2px 1.3px -0.9px hsl(var(--shadow-color) / 0.54),
+		1.3px 2.7px 2.9px -1.7px hsl(var(--shadow-color) / 0.47),
+		3px 6.1px 6.7px -2.6px hsl(var(--shadow-color) / 0.4),
+		6.3px 12.5px 13.8px -3.4px hsl(var(--shadow-color) / 0.34);
+	--shadow-elevation-high: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.56),
+		1.2px 2.3px 2.5px -0.4px hsl(var(--shadow-color) / 0.53),
+		2.2px 4.3px 4.7px -0.8px hsl(var(--shadow-color) / 0.5),
+		3.6px 7.1px 7.8px -1.1px hsl(var(--shadow-color) / 0.47),
+		5.7px 11.3px 12.4px -1.5px hsl(var(--shadow-color) / 0.44),
+		8.8px 17.6px 19.3px -1.9px hsl(var(--shadow-color) / 0.41),
+		13.2px 26.4px 29px -2.3px hsl(var(--shadow-color) / 0.38),
+		19.3px 38.5px 42.3px -2.7px hsl(var(--shadow-color) / 0.34),
+		27.3px 54.5px 59.9px -3.1px hsl(var(--shadow-color) / 0.31),
+		37.5px 75px 82.4px -3.4px hsl(var(--shadow-color) / 0.28);
 }
 * {
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -147,15 +157,16 @@ body {
 	/* height: 100vh; */
 	max-height: 100%;
 	/* background-color: var(--background); */
-	background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%), F4F8FB;
-	background: var(--background)
+	background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%),
+		F4F8FB;
+	background: var(--background);
 }
 button {
 	font-family: 'Lexend Deca', sans-serif;
 }
 
 section {
-	position: relative
+	position: relative;
 }
 .light {
 	font-weight: 300;
@@ -181,17 +192,38 @@ section {
 }
 
 .content {
-	padding: 20px 10vw;
+	padding: 0px 10vw;
 }
 
 .content-title {
 	font-size: 4rem;
 	margin-bottom: 3rem;
-	font-weight: 600;
+	font-weight: 500;
+	color: var(--content-title-color);
+}
+.content-title-hsl {
+	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+	color: #0094ff;
+	font-weight: 700;
 }
 
 .content-des {
 	font-size: 1.8rem;
 	max-width: 38ch;
-	font-weight: 300;
+	font-weight: 400;
+	color: var(--content-des-color);
+}
+
+.flex {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.items-center {
+	align-items: center;
 }

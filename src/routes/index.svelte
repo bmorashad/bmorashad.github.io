@@ -8,6 +8,7 @@
 	import hello from '$lib/assets/hello.svg';
 	import scroll from '$lib/assets/scroll-down.gif';
 	import scrollDark from '$lib/assets/scroll-down-dark.gif';
+	import ScrollDown from '$lib/ScrollDown.svelte';
 	import sun from '$lib/assets/sun.svg';
 	import moon from '$lib/assets/moon.svg';
 
@@ -41,54 +42,52 @@
 <section class="profile-section">
 	<div class="profile-container">
 		<div class="profile-wrapper">
-			<div class="profile-picture-clip">
-				<div class="profile-picture-wrapper">
-					<img class="profile-pic" src={profilePic} alt="profile" />
+			<div class="profile-content">
+				<div class="profile-picture-clip">
+					<div class="profile-picture-wrapper">
+						<img class="profile-pic" src={profilePic} alt="profile" />
+					</div>
 				</div>
-			</div>
-			<div class="profile-detail">
-				<h4 class="profile-role regular margin-0">Software Engineer</h4>
-				<h1 class="profile-name semi-bold">Hello, I'm Rashad.</h1>
-				<p class="profile-description light">
-					<span class="profile-des-left"
-						>I'm a <span class="profile-des-hsl regular">Linux</span> enthusiast with a
-						<span>
-							<br /><span class="profile-des-right"
-								>knack for <span class="profile-des-hsl regular">backend development.</span><span
-								/></span
+				<div class="profile-detail">
+					<h4 class="profile-role regular margin-0">Software Engineer</h4>
+					<h1 class="profile-name semi-bold">Hello, I'm Rashad.</h1>
+					<p class="profile-description light">
+						<span class="profile-des-left"
+							>I'm a <span class="profile-des-hsl regular">Linux</span> enthusiast with a
+							<span>
+								<br /><span class="profile-des-right"
+									>knack for <span class="profile-des-hsl regular">backend development.</span><span
+									/></span
+								></span
 							></span
-						></span
-					>
-				</p>
-				<div class="profile-link-container">
-					<a href="https://gitlab.com/bmorashad" target="_blank" class="profile-link gitlab">
-						<img src={gitlab} alt="gitlab" />
-						Gitlab
-					</a>
-					<a href="https://github.com/bmorashad" target="_blank" class="profile-link github">
-						<img src={github} alt="gitlab" />
-						Github
-					</a>
-					<a href="https://linkedin.com/bmorashad" target="_blank" class="profile-link linkedin">
-						<img src={linkedin} alt="gitlab" />
-						LinkedIn
-					</a>
-					<a href="https://medium.com/bmorashad" target="_blank" class="profile-link medium-blog">
-						<img src={medium} alt="gitlab" />
-						Medium
-					</a>
+						>
+					</p>
+					<div class="profile-link-container">
+						<a href="https://gitlab.com/bmorashad" target="_blank" class="profile-link gitlab">
+							<img src={gitlab} alt="gitlab" />
+							Gitlab
+						</a>
+						<a href="https://github.com/bmorashad" target="_blank" class="profile-link github">
+							<img src={github} alt="gitlab" />
+							Github
+						</a>
+						<a href="https://linkedin.com/bmorashad" target="_blank" class="profile-link linkedin">
+							<img src={linkedin} alt="gitlab" />
+							LinkedIn
+						</a>
+						<a href="https://medium.com/bmorashad" target="_blank" class="profile-link medium-blog">
+							<img src={medium} alt="gitlab" />
+							Medium
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="profile-hello display-none">
-				<img src={hello} alt="hello" />
+				<div class="profile-hello display-none">
+					<img src={hello} alt="hello" />
+				</div>
 			</div>
 		</div>
 		<div class="scroll-dwn">
-			{#if !darkMode}
-				<img src={scroll} alt="gitlab" />
-			{:else}
-				<img src={scrollDark} alt="gitlab" />
-			{/if}
+			<ScrollDown />
 		</div>
 	</div>
 	<div class="profile-wave-devider display-none">
@@ -129,9 +128,9 @@
 		opacity: 1;
 	}
 	.scroll-dwn {
-		grid-area: 3 / 2 / 4 / 3;
+		grid-area: 2 / 2 / 3 / 3;
 		justify-self: center;
-		padding: 10rem 0;
+		padding: 0rem 0;
 	}
 	.scroll-dwn img {
 		width: 10rem;
@@ -145,7 +144,7 @@
 		display: flex;
 		justify-content: center;
 		z-index: 1;
-		grid-area: 1 / 1 / 4 / 4;
+		/* grid-area: 1 / 1 / 4 / 4; */
 		align-self: center;
 		background: var(--navbar-bg-color);
 		align-items: center;
@@ -172,12 +171,14 @@
 		/* height: 100%; */
 		/* background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%), #F4F8FB; */
 		/* margin-top: 10rem; */
-		padding-top: 18rem;
+		/* padding-top: 18rem; */
 	}
 	.profile-container {
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
-		grid-template-rows: repeat(3, auto);
+		grid-template-rows: minmax(500px, auto) minmax(200px, auto);
+		height: calc(100vh - 70px);
+		min-height: 650px;
 		/* padding-top: 50px; */
 		/* padding-bottom: 180px; */
 	}
@@ -333,14 +334,18 @@
 	.profile-wave-devider .shape-fill {
 		fill: #f4f8fb;
 	}
-
-	.profile-wrapper {
+	.profile-content {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		grid-area: 2 / 2 / 3 / 3;
-		padding-top: 1vh;
-		padding-bottom: 1vh;
+		/* padding-top: 100px; */
+	}
+
+	.profile-wrapper {
+		grid-area: 1 / 2 / 2 / 3;
+		align-self: center;
+		justify-self: center;
+		/* padding-bottom: 1vh; */
 	}
 	.profile-picture-clip {
 		padding: 50px 50px 0 50px;
