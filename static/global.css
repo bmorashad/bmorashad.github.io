@@ -255,11 +255,11 @@ section {
 }
 
 .content {
-	padding: 0px clamp(10px, 15vw, 150px);
+	padding: 0px clamp(10px, 20vw, 200px);
 }
 
 .content-title {
-	font-size: 4rem;
+	font-size: 3.8rem;
 	margin-bottom: 3rem;
 	font-weight: 500;
 	color: var(--content-title-color);
