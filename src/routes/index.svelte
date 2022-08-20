@@ -11,6 +11,7 @@
 	import ScrollDown from '$lib/ScrollDown.svelte';
 	import sun from '$lib/assets/sun.svg';
 	import moon from '$lib/assets/moon.svg';
+	import Education from '../lib/Education.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -50,7 +51,7 @@
 				</div>
 				<div class="profile-detail">
 					<h4 class="profile-role regular margin-0">Software Engineer</h4>
-					<h1 class="profile-name semi-bold">Hello, I'm Rashad.</h1>
+					<h1 class="profile-name semi-bold">Hello, I'm Rashad!</h1>
 					<p class="profile-description light">
 						<span class="profile-des-left"
 							><span class="profile-des-hsl regular">Linux & OSS</span> enthusiast with a
@@ -105,6 +106,7 @@
 	</div>
 	<div class="content">
 		<Skills />
+		<Education {darkMode} />
 	</div>
 </section>
 

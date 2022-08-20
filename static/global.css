@@ -49,8 +49,13 @@
 	--social-link-hover-color: #fff;
 
 	--content-title-hsl-color: #0094ff;
+	--education-content-title-hsl-color: #0094ff;
 	--content-title-color: #3b5462;
 	--content-des-color: #3b5462;
+
+	--content-des-dark-color: #141414;
+
+	--education-place-color: #0085ff;
 
 	--profile-picture-clip-bg-gradient-color: linear-gradient(
 			180deg,
@@ -158,8 +163,13 @@
 	--social-link-hover-color: #fff;
 
 	--content-title-hsl-color: #d38dff;
+	--education-content-title-hsl-color: #617bff;
 	--content-title-color: #e6f6ff;
 	--content-des-color: #e6f6ff;
+
+	--content-des-dark-color: #fff;
+
+	--education-place-color: #4db5ff;
 
 	--profile-picture-clip-bg-gradient-color: linear-gradient(
 			180deg,
@@ -296,4 +306,13 @@ text-fill-color: transparent; */
 
 .flex-direction-column {
 	flex-direction: column;
+}
+.mt-section-xlg {
+	margin-top: 10rem;
+}
+.mr-medium {
+	margin-right: 5rem;
+}
+.ml-medium {
+	margin-left: 5rem;
 }

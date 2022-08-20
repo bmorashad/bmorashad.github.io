@@ -106,7 +106,7 @@
 	];
 </script>
 
-<div class="skills-container" id="skills">
+<section class="skills-container" id="skills">
 	<div class="skill-content-details">
 		<h2 class="content-title skill-title">
 			<span class="skill-content-title-hsl content-title-hsl">Techonlogies</span> I've worked with
@@ -126,7 +126,7 @@
 			{/each}
 		</div>
 	</div>
-</div>
+</section>
 
 <style>
 	.skills-container {
