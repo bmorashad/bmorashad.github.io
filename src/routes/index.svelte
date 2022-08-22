@@ -4,6 +4,7 @@
 	import moon from '$lib/assets/moon.svg';
 	import Education from '$lib/Education.svelte';
 	import ProfileIntro from '$lib/ProfileIntro.svelte';
+	import Footer from '$lib/Footer.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -38,6 +39,8 @@
 		<Skills />
 	</div>
 </section>
+
+<Footer />
 
 <style>
 	.light-theme-toggle {
@@ -89,25 +92,5 @@
 		color: var(--menu-link-hover-color);
 		text-decoration: underline;
 		transition: 0.1s;
-	}
-	.profile-wave-devider {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		overflow: hidden;
-		line-height: 0;
-		transform: rotate(180deg);
-	}
-
-	.profile-wave-devider svg {
-		position: relative;
-		display: block;
-		width: calc(148% + 1.3px);
-		height: 235px;
-	}
-
-	.profile-wave-devider .shape-fill {
-		fill: #f4f8fb;
 	}
 </style>

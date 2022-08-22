@@ -94,6 +94,9 @@
 	--scroll-down-color1: #005230;
 	--scroll-down-color2: #1c4591;
 
+	--footer-bg-color: #2b739b;
+	--footer-label-color: #d3efff;
+
 	--shadow-color: 196deg 20% 63%;
 	--shadow-elevation-low: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.48),
 		-0.1px 1.5px 1.4px -1.9px hsl(var(--shadow-color) / 0.37),
@@ -195,6 +198,9 @@
 
 	--scroll-down-color1: #62e7b1;
 	--scroll-down-color2: #afd2ff;
+
+	--footer-bg-color: #2d3c46;
+	--footer-label-color: #c7c7c7;
 
 	--shadow-color: 204deg 56% 3%;
 	--shadow-elevation-low: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
