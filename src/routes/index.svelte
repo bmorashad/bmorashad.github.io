@@ -6,6 +6,7 @@
 	import ProfileIntro from '$lib/ProfileIntro.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Works from '../lib/Works.svelte';
+	import Contact from '../lib/Contact.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -22,8 +23,8 @@
 <div class="nav-container">
 	<nav>
 		<a link href="#skills" class="menu-link">Skills</a>
-		<a link href="#experience" class="menu-link">Experience</a>
-		<a link href="#projects" class="menu-link">Projects</a>
+		<a link href="#works" class="menu-link">Works</a>
+		<a link href="#contact" class="menu-link">Contact</a>
 		<div class="theme-toggle" on:click={toggleMode}>
 			{#if !darkMode}
 				<img class="dark-theme-toggle" src={moon} alt="" />
@@ -39,6 +40,7 @@
 	<div class="content">
 		<Skills />
 		<Works {darkMode} />
+		<Contact {darkMode} />
 	</div>
 </section>
 

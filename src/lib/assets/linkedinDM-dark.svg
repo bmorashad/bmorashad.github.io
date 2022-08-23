@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="171"
+   height="162"
+   viewBox="0 0 171 162"
+   fill="none"
+   version="1.1"
+   id="svg837"
+   sodipodi:docname="linkedinDM-dark.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     id="namedview839"
+     pagecolor="#172531"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.5493827"
+     inkscape:cx="22.554479"
+     inkscape:cy="109.43826"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg837" />
+  <rect
+     x="0.814453"
+     width="169.887"
+     height="137.661"
+     rx="22"
+     fill="#75A0D3"
+     id="rect827"
+     style="fill:#95ccff;fill-opacity:1" />
+  <path
+     d="M89.7443 158.082C87.4899 160.043 84.1361 160.046 81.8778 158.09L58.278 137.645L113.24 137.644L89.7443 158.082Z"
+     fill="#2867B2"
+     id="path829"
+     style="fill:#5ac0ff;fill-opacity:1" />
+  <line
+     x1="56.8145"
+     y1="39"
+     x2="113.814"
+     y2="39"
+     stroke="#F3F8FB"
+     stroke-width="4"
+     stroke-linecap="round"
+     id="line831"
+     style="stroke:#325265;stroke-opacity:1" />
+  <line
+     x1="56.8145"
+     y1="91"
+     x2="113.814"
+     y2="91"
+     stroke="#F3F8FB"
+     stroke-width="4"
+     stroke-linecap="round"
+     id="line833"
+     style="stroke:#325265;stroke-opacity:1" />
+  <line
+     x1="63.8145"
+     y1="65"
+     x2="107.814"
+     y2="65"
+     stroke="#CFEDFF"
+     stroke-width="4"
+     stroke-linecap="round"
+     id="line835"
+     style="stroke:#284455;stroke-opacity:1" />
+</svg>

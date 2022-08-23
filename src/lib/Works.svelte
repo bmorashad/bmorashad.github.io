@@ -30,7 +30,7 @@
 	];
 </script>
 
-<section class="works-container">
+<section class="works-container" id="works">
 	<div class="works-content-details">
 		<h2 class="content-title content-title-works text-center">
 			Take a look at some of <span class="content-title-hsl2">my work</span>
@@ -63,7 +63,7 @@
 		grid-template-columns: 1fr;
 		justify-content: center;
 		align-items: center;
-		margin-top: 8rem;
+		margin-top: 15rem;
 	}
 	.works-content-details {
 		display: flex;
@@ -114,11 +114,19 @@
 		position: absolute;
 		right: 18px;
 		top: 18px;
+		/* padding: 0.8rem; */
+		/* background: #2c719b; */
+		border-radius: 50%;
 	}
 	a.work-name-link {
 		color: var(--work-heading-color);
 	}
 	.work-heading:hover > a.work-name-link {
 		text-decoration-thickness: 2px;
+	}
+	.work-heading:hover > a.external-link-icon {
+		right: 16px;
+		top: 16px;
+		transition: 50ms;
 	}
 </style>
