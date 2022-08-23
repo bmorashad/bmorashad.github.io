@@ -5,6 +5,7 @@
 	import Education from '$lib/Education.svelte';
 	import ProfileIntro from '$lib/ProfileIntro.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import Works from '../lib/Works.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -37,6 +38,7 @@
 	<ProfileIntro />
 	<div class="content">
 		<Skills />
+		<Works />
 	</div>
 </section>
 

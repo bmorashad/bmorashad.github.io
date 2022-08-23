@@ -109,7 +109,7 @@
 <section class="skills-container" id="skills">
 	<div class="skill-content-details">
 		<h2 class="content-title skill-title">
-			<span class="skill-content-title-hsl content-title-hsl">Techonlogies</span> I've worked with
+			<span class="skill-content-title-hsl content-title-hsl1">Techonlogies</span> I've worked with
 		</h2>
 		<h5 class="content-des content-skill-des regular">
 			I’ve worked with but not limited to these interesting technologies so far

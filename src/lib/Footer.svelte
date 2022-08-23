@@ -31,7 +31,7 @@
 	.footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin-top: 15rem;
+		margin-top: 20rem;
 		background: var(--footer-bg-color);
 	}
 	.footer-item {

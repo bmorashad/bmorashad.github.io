@@ -48,7 +48,8 @@
 
 	--social-link-hover-color: #fff;
 
-	--content-title-hsl-color: #0094ff;
+	--content-title-hsl-color1: #0094ff;
+	--content-title-hsl-color2: #884fc1;
 	--education-content-title-hsl-color: #0094ff;
 	--content-title-color: #3b5462;
 	--content-des-color: #3b5462;
@@ -97,6 +98,12 @@
 	--footer-bg-color: #2b739b;
 	--footer-label-color: #d3efff;
 
+	--work-card-border: 1px solid #a2c6e3;
+	--work-card-bg-color: rgba(255, 255, 255, 0.4);
+	--work-heading-color: #2c719b;
+	--work-des-color: #3c4146;
+
+	--card-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 	--shadow-color: 196deg 20% 63%;
 	--shadow-elevation-low: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.48),
 		-0.1px 1.5px 1.4px -1.9px hsl(var(--shadow-color) / 0.37),
@@ -165,7 +172,8 @@
 
 	--social-link-hover-color: #fff;
 
-	--content-title-hsl-color: #d38dff;
+	--content-title-hsl-color1: #d38dff;
+	--content-title-hsl-color2: #617bff;
 	--education-content-title-hsl-color: #617bff;
 	--content-title-color: #e6f6ff;
 	--content-des-color: #e6f6ff;
@@ -201,6 +209,11 @@
 
 	--footer-bg-color: #2d3c46;
 	--footer-label-color: #c7c7c7;
+
+	--work-card-border: 1px solid #36414c;
+	--work-card-bg-color: rgb(25 40 52);
+	--work-heading-color: #03b38b;
+	--work-des-color: #d6e9f9;
 
 	--shadow-color: 204deg 56% 3%;
 	--shadow-elevation-low: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
@@ -280,13 +293,22 @@ section {
 	font-weight: 500;
 	color: var(--content-title-color);
 }
-.content-title-hsl {
+.content-title-hsl1 {
 	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 text-fill-color: transparent; */
-	color: var(--content-title-hsl-color);
+	color: var(--content-title-hsl-color1);
+	font-weight: 700;
+}
+.content-title-hsl2 {
+	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+	color: var(--content-title-hsl-color2);
 	font-weight: 700;
 }
 
@@ -321,4 +343,7 @@ text-fill-color: transparent; */
 }
 .ml-medium {
 	margin-left: 5rem;
+}
+.text-center {
+	text-align: center;
 }
