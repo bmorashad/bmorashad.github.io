@@ -38,7 +38,7 @@
 	<ProfileIntro />
 	<div class="content">
 		<Skills />
-		<Works />
+		<Works {darkMode} />
 	</div>
 </section>
 

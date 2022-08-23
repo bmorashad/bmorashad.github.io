@@ -1,4 +1,5 @@
 <script>
+	export let darkMode = false;
 	import ExternalLink from '$lib/ExternalLink.svelte';
 	import ExternalLinkHover from '$lib/ExternalLinkHover.svelte';
 
@@ -47,7 +48,7 @@
 						<h3 class="work-name">{work.name}</h3>
 					</a>
 					<a href={work.link} class="external-link-icon">
-						<ExternalLink />
+						<ExternalLink {darkMode} />
 					</a>
 				</div>
 				<div class="work-des">{work.description}</div>
@@ -82,11 +83,16 @@
 		border-radius: 10px;
 		box-shadow: var(--card-shadow);
 	}
+	.work-card:hover {
+		transform: translateY(-2px);
+		transition: 200ms;
+	}
 	.work-name {
 		margin-right: 2.5rem;
 	}
 	.work-heading {
 		padding: 2rem 3rem;
+		cursor: pointer;
 	}
 	.work-heading h3 {
 		font-size: 1.8rem;
@@ -100,10 +106,14 @@
 	.work-heading {
 		display: flex;
 		align-items: center;
+		position: relative;
 	}
 	a.external-link-icon {
 		display: flex;
 		margin-left: auto;
+		position: absolute;
+		right: 18px;
+		top: 18px;
 	}
 	a.work-name-link {
 		color: var(--work-heading-color);
