@@ -7,6 +7,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import Works from '../lib/Works.svelte';
 	import Contact from '../lib/Contact.svelte';
+	import { onMount } from 'svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -18,6 +19,9 @@
 		}
 		darkMode = !darkMode;
 	};
+	onMount(async () => {
+		toggleMode();
+	});
 </script>
 
 <div class="nav-container">

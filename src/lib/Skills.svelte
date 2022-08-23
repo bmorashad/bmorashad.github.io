@@ -173,4 +173,22 @@
 		font-size: 1.7rem;
 		font-weight: 600;
 	}
+	@media only screen and (max-width: 850px) {
+		.skill-content-details {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.skill-tag-wrapper {
+			justify-content: center;
+		}
+		.skills-container {
+			grid-template-columns: 1fr;
+			grid-gap: 4rem;
+		}
+		.skill-content-details {
+			align-self: center;
+		}
+	}
 </style>

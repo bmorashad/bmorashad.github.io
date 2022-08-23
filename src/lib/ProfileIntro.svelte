@@ -202,8 +202,43 @@
 	img.profile-pic {
 		width: 100%;
 		max-width: calc(9vw + 40px);
-		min-width: 190px;
+		min-width: 150px;
 		filter: var(--profile-picture-filter);
 		/* border-radius: 50%; */
+	}
+	@media only screen and (max-width: 850px) {
+		.profile-content {
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.profile-picture-clip {
+			padding: 42px 50px 0 50px;
+			clip-path: circle(83px at center);
+		}
+		.profile-detail {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.profile-description {
+			text-align: center;
+		}
+		.profile-des-right {
+			padding-left: 0;
+		}
+		.profile-wrapper {
+			align-self: center;
+		}
+		.scroll-dwn {
+			/* grid-area: 2 / 2 / 3 / 3; */
+			grid-area: 1 / 2 / 2 / 3;
+			align-self: end;
+			top: 5rem;
+			position: relative;
+		}
+		.profile-container {
+			grid-template-rows: minmax(500px, auto);
+		}
 	}
 </style>

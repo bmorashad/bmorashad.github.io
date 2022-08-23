@@ -64,4 +64,12 @@
 		transform: translateY(-2px);
 		transition: 200ms;
 	}
+	@media only screen and (max-width: 950px) {
+		.footer {
+			margin-top: 15rem;
+		}
+		.footer-item {
+			padding: 3rem 7rem;
+		}
+	}
 </style>

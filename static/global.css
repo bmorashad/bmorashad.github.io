@@ -322,7 +322,7 @@ section {
 }
 
 .content {
-	padding: 0px clamp(10px, 20vw, 200px);
+	padding: 0px clamp(10px, 10vw, 170px);
 }
 
 .content-title {
@@ -384,4 +384,20 @@ text-fill-color: transparent; */
 }
 .text-center {
 	text-align: center;
+}
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+	html {
+		font-size: 9.5px;
+	}
+	.content {
+		padding: 0px clamp(70px, 5vw, 100px);
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	html {
+		font-size: 9px;
+	}
 }

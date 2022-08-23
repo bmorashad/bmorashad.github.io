@@ -19,7 +19,7 @@
 			{:else}
 				<img src={emailIcon} alt="email" />
 			{/if}
-			<h3>Email Me</h3>
+			<h3>Email</h3>
 		</a>
 		<a class="contact contact-linkedin" href={`https://linkedin.com/bmorashad`}>
 			{#if darkMode}
@@ -27,7 +27,7 @@
 			{:else}
 				<img src={linkedinDMIcon} alt="linkedin direct message" />
 			{/if}
-			<h3>LinkedIn DM</h3></a
+			<h3>LinkedIn</h3></a
 		>
 	</div>
 </section>
@@ -38,15 +38,17 @@
 		grid-template-columns: auto auto;
 		align-items: center;
 		justify-content: center;
-		margin-top: 20rem;
+		margin-top: 16rem;
+		grid-gap: clamp(50px, 20vw, 100px);
 	}
 	.contact-wrapper {
 		display: grid;
-		grid-template-columns: minmax(40px, 0.5fr) 20fr 20fr;
+		/* grid-template-columns: minmax(40px, 0.5fr) 20fr 20fr; */
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 5rem;
 	}
 	.contact {
-		padding: 8rem;
+		/* padding: 8rem; */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -57,6 +59,8 @@
 		text-decoration: none;
 		background: var(--contact-email-bg-color);
 		opacity: 0.87;
+		width: clamp(250px, 15vw, 400px);
+		height: clamp(250px, 15vw, 350px);
 	}
 	.contact:hover {
 		transition: 200ms;
@@ -79,14 +83,14 @@
 		color: var(--contact-email-color);
 		border-color: var(--contact-email-border-color);
 		background: var(--contact-email-bg-color);
-		grid-area: 1 / 2 / 2 / 3;
+		/* grid-area: 1 / 2 / 2 / 3; */
 		box-shadow: var(--contact-email-box-shadow-color);
 	}
 	.contact-linkedin {
 		color: var(--contact-linkedin-color);
 		border-color: var(--contact-linkedin-border-color);
 		background: var(--contact-linkedin-bg-color);
-		grid-area: 1 / 3 / 2 / 4;
+		/* grid-area: 1 / 3 / 2 / 4; */
 		box-shadow: var(--contact-linkedin-box-shadow-color);
 	}
 	.contact h3 {
@@ -96,9 +100,53 @@
 		margin-bottom: 3rem;
 	}
 	.contact-email img {
-		width: 100%;
+		width: 45%;
 	}
 	.contact-linkedin img {
-		width: 60%;
+		width: 30%;
+	}
+	@media only screen and (max-width: 1000px) {
+		.contact-email img {
+			width: 40%;
+		}
+		.contact-linkedin img {
+			width: 25%;
+		}
+		.contact {
+			width: clamp(200px, 15vw, 200px);
+			height: clamp(200px, 15vw, 250px);
+		}
+		.contact-container {
+			grid-gap: 4rem;
+		}
+		.contact-wrapper {
+			grid-gap: 4rem;
+		}
+	}
+	@media only screen and (max-width: 850px) {
+		.contact-container {
+			grid-template-columns: 1fr;
+			justify-content: center;
+			grid-gap: 8rem;
+			margin-top: 10rem;
+		}
+		.content-title-contact {
+			text-align: center;
+		}
+		.content-contact-des {
+			text-align: center;
+		}
+		.contact-content-details {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.contact-wrapper {
+			justify-content: center;
+			align-items: center;
+			justify-items: center;
+			grid-template-columns: auto auto;
+		}
 	}
 </style>

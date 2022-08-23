@@ -63,7 +63,7 @@
 		grid-template-columns: 1fr;
 		justify-content: center;
 		align-items: center;
-		margin-top: 15rem;
+		margin-top: 10rem;
 	}
 	.works-content-details {
 		display: flex;
@@ -128,5 +128,13 @@
 		right: 16px;
 		top: 16px;
 		transition: 50ms;
+	}
+	@media only screen and (max-width: 850px) {
+		.works-container {
+			margin-top: 8rem;
+		}
+		.works-wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
 	}
 </style>
