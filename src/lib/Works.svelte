@@ -118,4 +118,7 @@
 	a.work-name-link {
 		color: var(--work-heading-color);
 	}
+	.work-heading:hover > a.work-name-link {
+		text-decoration-thickness: 2px;
+	}
 </style>
