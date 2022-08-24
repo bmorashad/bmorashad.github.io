@@ -154,8 +154,26 @@
 		}
 	}
 	@media only screen and (max-width: 650px) {
+		.contact {
+			width: clamp(160px, 35vw, 250px);
+			height: clamp(160px, 35vw, 250px);
+		}
 		.contact-wrapper {
-			grid-gap: 0 3rem;
+			grid-gap: 0 2rem;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.contact h3 {
+			font-size: 2rem;
+		}
+	}
+	@media only screen and (max-width: 380px) {
+		.contact {
+			width: clamp(140px, 35vw, 250px);
+			height: clamp(140px, 35vw, 250px);
+		}
+		.contact-wrapper {
+			grid-gap: 0 2rem;
 		}
 	}
 </style>

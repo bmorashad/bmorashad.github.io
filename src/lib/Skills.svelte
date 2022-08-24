@@ -124,7 +124,7 @@
 		display: flex;
 		justify-content: center;
 		width: fit-content;
-		padding: 8px 25px;
+		padding: 8px 20px;
 		/* padding-right: 30px; */
 		border: var(--skill-tag-border);
 		border-radius: 15px;
@@ -133,10 +133,10 @@
 		color: var(--skill-tag-color);
 	}
 	.tag-tech {
-		font-size: 1.7rem;
+		font-size: 1.8rem;
 		font-weight: 600;
 	}
-	@media only screen and (max-width: 850px) {
+	@media only screen and (max-width: 950px) {
 		.skill-content-details {
 			text-align: center;
 			display: flex;

@@ -390,7 +390,7 @@ text-fill-color: transparent; */
 
 @media only screen and (max-width: 1000px) {
 	html {
-		font-size: 9.5px;
+		/* font-size: 9.5px; */
 	}
 	.content {
 		padding: 0px clamp(60px, 5vw, 100px);
@@ -399,7 +399,7 @@ text-fill-color: transparent; */
 
 @media only screen and (max-width: 950px) {
 	html {
-		font-size: 9px;
+		/* font-size: 9px; */
 	}
 	.content-des {
 		font-size: 2rem;
@@ -407,7 +407,7 @@ text-fill-color: transparent; */
 }
 @media only screen and (max-width: 650px) {
 	html {
-		/* font-size: 8.8px; */
+		/* font-size: 9px; */
 	}
 	.content {
 		padding: 0px clamp(40px, 5vw, 100px);
@@ -419,11 +419,11 @@ text-fill-color: transparent; */
 }
 @media only screen and (max-width: 500px) {
 	.content {
-		padding: 0px clamp(35px, 5vw, 100px);
+		padding: 0px clamp(15px, 5vw, 100px);
 	}
 }
 @media only screen and (max-width: 430px) {
 	html {
-		font-size: 8px;
+		font-size: 9px;
 	}
 }

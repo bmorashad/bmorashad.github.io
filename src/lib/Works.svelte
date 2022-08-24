@@ -95,7 +95,8 @@
 		cursor: pointer;
 	}
 	.work-heading h3 {
-		font-size: 1.8rem;
+		font-size: 1.9rem;
+		max-width: 35ch;
 	}
 	.work-des {
 		padding: 2rem 3rem;
@@ -148,7 +149,6 @@
 		}
 		.work-heading {
 			padding: 2.5rem 3rem;
-			cursor: pointer;
 		}
 		/* .works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -156,9 +156,15 @@
 		} */
 	}
 	@media only screen and (max-width: 500px) {
-		.works-wrapper {
-			/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-			grid-gap: 10px;
+		.work-des {
+			padding: 2rem 2rem;
+			padding-top: 0;
+		}
+		.work-heading {
+			padding: 2rem 2rem;
+		}
+		.works-container {
+			margin-top: 5rem;
 		}
 	}
 </style>

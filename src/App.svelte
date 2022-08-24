@@ -108,4 +108,9 @@
 		text-decoration: underline;
 		transition: 0.1s;
 	}
+	@media only screen and (max-width: 650px) {
+		.menu-link {
+			padding: 1rem 1.2rem;
+		}
+	}
 </style>

@@ -88,13 +88,13 @@
 			justify-self: center;
 		}
 		.footer-label h3 {
-			font-size: 2.4rem;
+			font-size: 2.2rem;
 		}
 		.footer-links {
 			justify-self: center;
 		}
 		.link img {
-			width: 4rem;
+			width: 3.5rem;
 		}
 	}
 </style>

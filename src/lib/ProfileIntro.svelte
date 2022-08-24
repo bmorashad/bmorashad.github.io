@@ -80,7 +80,7 @@
 	}
 	.profile-link img {
 		margin-right: 1rem;
-		width: 2.2rem;
+		width: 2.6rem;
 	}
 	.profile-link {
 		padding: 0.6rem;
@@ -253,7 +253,7 @@
 		.profile-container {
 			grid-template-columns: auto;
 			grid-template-rows: auto auto;
-			height: auto;
+			/* height: auto; */
 		}
 		.profile-wrapper {
 			grid-area: 1 / 1 / 2 / 2;
@@ -262,13 +262,13 @@
 			grid-area: 2 / 1 / 3 / 2;
 		}
 		.profile-name {
-			font-size: 4rem;
+			font-size: 4.2rem;
+			max-width: 8ch;
+			text-align: center;
 		}
 		.profile-description {
-			/* font-size: 2rem; */
+			font-size: 2rem;
 		}
-	}
-	@media only screen and (max-width: 500px) {
 		.profile-link-name {
 			display: none;
 		}
@@ -284,14 +284,33 @@
 			width: 100%;
 			justify-content: center;
 		}
-	}
-	@media only screen and (max-width: 500px) {
 		.profile-picture-clip {
 			padding: 35px 50px 0 50px;
 			clip-path: circle(70px at center);
 		}
 		img.profile-pic {
 			min-width: 130px;
+		}
+	}
+	@media only screen and (max-width: 650px) {
+		.profile-name {
+			font-size: 4rem;
+			max-width: 8ch;
+			text-align: center;
+		}
+	}
+	@media only screen and (max-width: 450px) {
+		.scroll-dwn {
+			display: none;
+			height: 0px;
+		}
+		.profile-container {
+			height: auto;
+			grid-template-rows: auto;
+			align-content: baseline;
+			margin-top: 50px;
+			margin-bottom: 100px;
+			min-height: auto;
 		}
 	}
 </style>
