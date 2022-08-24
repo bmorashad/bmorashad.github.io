@@ -19,9 +19,9 @@
 		}
 		darkMode = !darkMode;
 	};
-	onMount(async () => {
+	/* onMount(async () => {
 		toggleMode();
-	});
+	}); */
 </script>
 
 <div class="nav-container">

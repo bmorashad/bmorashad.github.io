@@ -227,7 +227,7 @@
 	--scroll-down-color2: #afd2ff;
 
 	--footer-bg-color: #2d3c46;
-	--footer-label-color: #c7c7c7;
+	--footer-label-color: #d3efff;
 
 	--work-card-border: 1px solid #36414c;
 	--work-card-bg-color: rgb(25 40 52);
@@ -392,12 +392,20 @@ text-fill-color: transparent; */
 		font-size: 9.5px;
 	}
 	.content {
-		padding: 0px clamp(70px, 5vw, 100px);
+		padding: 0px clamp(60px, 5vw, 100px);
 	}
 }
 
 @media only screen and (max-width: 950px) {
 	html {
 		font-size: 9px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	html {
+		font-size: 8.5px;
+	}
+	.content {
+		padding: 0px clamp(40px, 5vw, 100px);
 	}
 }

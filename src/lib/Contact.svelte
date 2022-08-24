@@ -149,4 +149,10 @@
 			grid-template-columns: auto auto;
 		}
 	}
+	@media only screen and (max-width: 550px) {
+		.contact {
+			width: clamp(130px, 35vw, 200px);
+			height: clamp(130px, 35vw, 250px);
+		}
+	}
 </style>

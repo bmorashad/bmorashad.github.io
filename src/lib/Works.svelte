@@ -74,8 +74,8 @@
 	}
 	.works-wrapper {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		grid-gap: 40px;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-gap: 20px;
 	}
 	.work-card {
 		background: var(--work-card-bg-color);
@@ -135,6 +135,7 @@
 		}
 		.works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-gap: 20px;
 		}
 	}
 </style>

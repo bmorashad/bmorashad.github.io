@@ -72,4 +72,17 @@
 			padding: 3rem 7rem;
 		}
 	}
+	@media only screen and (max-width: 550px) {
+		.footer-item:last-child {
+			padding-left: 0rem;
+			padding-right: 2rem;
+		}
+		.footer-item:first-child {
+			padding-right: 0rem;
+			padding-left: 2rem;
+		}
+		.footer-label h3 {
+			font-size: 1.8rem;
+		}
+	}
 </style>
