@@ -1,4 +1,5 @@
 <script>
+	import { socialLinks } from '../../public/data.json';
 	import gitlab from '../assets/gitlab-white.svg';
 	import github from '../assets/github-white.svg';
 	import linkedin from '../assets/linkedin-white.svg';
@@ -11,18 +12,11 @@
 	</div>
 	<div class="footer-item footer-links">
 		<div class="footer-link-wrapper">
-			<a href="https://gitlab.com/bmorashad" target="_blank" class="link link-gitlab">
-				<img src={gitlab} alt="gitlab" />
-			</a>
-			<a href="https://github.com/bmorashad" target="_blank" class="link link-github">
-				<img src={github} alt="gitlab" />
-			</a>
-			<a href="https://linkedin.com/bmorashad" target="_blank" class="link link-linkedin">
-				<img src={linkedin} alt="gitlab" />
-			</a>
-			<a href="https://medium.com/bmorashad" target="_blank" class="link link-medium-blog">
-				<img src={medium} alt="gitlab" />
-			</a>
+			{#each socialLinks as link}
+				<a href={link.link} target="_blank" class={`link link-${link.className}`}>
+					<img src={link.iconWhite} alt={link.name} />
+				</a>
+			{/each}
 		</div>
 	</div>
 </div>

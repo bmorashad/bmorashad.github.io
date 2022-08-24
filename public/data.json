@@ -1,5 +1,58 @@
 {
-	
+	"works": [
+		{
+			"name": "Genimen",
+			"description": "A machine learning group project that analysis mobile phone reviews",
+			"link": "https://github/bmorashad/project-genimen"
+		},
+		{
+			"name": "Google batch translate",
+			"description": "Simple script that lets you translate  batch of text in json format using  Google Translate API. ",
+			"link": "https://github/bmorashad/dev-scripts/"
+		},
+		{
+			"name": "Dot Files",
+			"description": "This contains my linux scripts, and configuration files for neovim,  vscode, tmux, bash, fish, kitty, etc",
+			"link": "https://github/bmorashad/dotfiles"
+		},
+		{
+			"name": "PKCE OAuth in React",
+			"description": "This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK",
+			"link": "https://github/bmorashad/dotfiles"
+		}
+	]
+	,
+	"socialLinks": [
+		{
+			"name": "Gitlab",
+			"link": "https://gitlab.com/bmorashad",
+			"iconColored": "/src/assets/gitlab.svg",
+			"iconWhite": "/src/assets/gitlab-white.svg",
+			"className": "gitlab"
+		},
+		{
+			"name": "Github",
+			"link": "https://github.com/bmorashad",
+			"iconColored": "/src/assets/github.svg",
+			"iconWhite": "/src/assets/github-white.svg",
+			"className": "github"
+		},
+		{
+			"name": "LinkedIn",
+			"link": "https://www.linkedin.com/in/bmorashad/",
+			"iconColored": "/src/assets/linkedin.svg",
+			"iconWhite": "/src/assets/linkedin-white.svg",
+			"className": "linkedin"
+		},
+		{
+			"name": "Medium",
+			"link": "https://bmorashad.medium.com/",
+			"iconColored": "/src/assets/medium.svg",
+			"iconWhite": "/src/assets/medium-white.svg",
+			"className": "medium"
+		}
+	],
+
 	"skills": [
 		{
 			"name": "Java"

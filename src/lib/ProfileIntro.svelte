@@ -1,4 +1,5 @@
 <script>
+	import { socialLinks } from '../../public/data.json';
 	import profilePic from '../assets/profile_pic.png';
 	import gitlab from '../assets/gitlab.svg';
 	import github from '../assets/github.svg';
@@ -30,22 +31,12 @@
 					>
 				</p>
 				<div class="profile-link-container">
-					<a href="https://gitlab.com/bmorashad" target="_blank" class="profile-link gitlab">
-						<img src={gitlab} alt="gitlab" />
-						<span class="profile-link-name">Gitlab</span>
-					</a>
-					<a href="https://github.com/bmorashad" target="_blank" class="profile-link github">
-						<img src={github} alt="gitlab" />
-						<span class="profile-link-name">Github</span>
-					</a>
-					<a href="https://linkedin.com/bmorashad" target="_blank" class="profile-link linkedin">
-						<img src={linkedin} alt="gitlab" />
-						<span class="profile-link-name">LinkedIn</span>
-					</a>
-					<a href="https://medium.com/bmorashad" target="_blank" class="profile-link medium-blog">
-						<img src={medium} alt="gitlab" />
-						<span class="profile-link-name">Medium</span>
-					</a>
+					{#each socialLinks as link}
+						<a href={link.link} target="_blank" class={`profile-link ${link.className}`}>
+							<img src={link.iconColored} alt={link.name} />
+							<span class="profile-link-name">{link.name}</span>
+						</a>
+					{/each}
 				</div>
 			</div>
 		</div>
@@ -113,7 +104,7 @@
 		background: var(--profile-link-linkedin-bg-color);
 		border: var(--profile-link-linkedin-border);
 	}
-	.medium-blog {
+	.medium {
 		color: var(--profile-link-medium-color);
 		background: var(--profile-link-medium-bg-color);
 		border: var(--profile-link-medium-border);
@@ -137,7 +128,7 @@
 		background: var(--profile-link-linkedin-bg-color-hover);
 		border: var(--profile-link-linkedin-border-hover);
 	}
-	.medium-blog:hover {
+	.medium:hover {
 		color: var(--profile-link-color-hover);
 		background: var(--profile-link-medium-bg-color-hover);
 		border: var(--profile-link-medium-border-hover);

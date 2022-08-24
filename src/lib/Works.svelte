@@ -1,33 +1,8 @@
 <script>
 	export let darkMode = false;
+	import { works } from '../../public/data.json';
 	import ExternalLink from '../lib/ExternalLink.svelte';
 	import ExternalLinkHover from '../lib/ExternalLinkHover.svelte';
-
-	const works = [
-		{
-			name: 'Genimen',
-			description: 'A machine learning group project that analysis mobile phone reviews',
-			link: 'https://github/bmorashad/project-genimen'
-		},
-		{
-			name: 'Google batch translate',
-			description:
-				'Simple script that lets you translate  batch of text in json format using  Google Translate API. ',
-			link: 'https://github/bmorashad/dev-scripts/'
-		},
-		{
-			name: 'Dot Files',
-			description:
-				'This contains my linux scripts, and configuration files for neovim,  vscode, tmux, bash, fish, kitty, etc',
-			link: 'https://github/bmorashad/dotfiles'
-		},
-		{
-			name: 'PKCE OAuth in React',
-			description:
-				'This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK',
-			link: 'https://github/bmorashad/dotfiles'
-		}
-	];
 </script>
 
 <section class="works-container" id="works">
