@@ -1,0 +1,297 @@
+<script>
+	import profilePic from '../assets/profile_pic.png';
+	import gitlab from '../assets/gitlab.svg';
+	import github from '../assets/github.svg';
+	import linkedin from '../assets/linkedin.svg';
+	import medium from '../assets/medium.svg';
+	import ScrollDown from '../lib/ScrollDown.svelte';
+</script>
+
+<div class="profile-container">
+	<div class="profile-wrapper">
+		<div class="profile-content">
+			<div class="profile-picture-clip">
+				<div class="profile-picture-wrapper">
+					<img class="profile-pic" src={profilePic} alt="profile" />
+				</div>
+			</div>
+			<div class="profile-detail">
+				<h4 class="profile-role regular margin-0">Software Engineer</h4>
+				<h1 class="profile-name semi-bold">Hello, I'm Rashad!</h1>
+				<p class="profile-description light">
+					<span class="profile-des-left"
+						><span class="profile-des-hsl regular">Linux & OSS</span> enthusiast with a
+						<span>
+							<br /><span class="profile-des-right"
+								>knack for <span class="profile-des-hsl regular">backend development.</span><span
+								/></span
+							></span
+						></span
+					>
+				</p>
+				<div class="profile-link-container">
+					<a href="https://gitlab.com/bmorashad" target="_blank" class="profile-link gitlab">
+						<img src={gitlab} alt="gitlab" />
+						<span class="profile-link-name">Gitlab</span>
+					</a>
+					<a href="https://github.com/bmorashad" target="_blank" class="profile-link github">
+						<img src={github} alt="gitlab" />
+						<span class="profile-link-name">Github</span>
+					</a>
+					<a href="https://linkedin.com/bmorashad" target="_blank" class="profile-link linkedin">
+						<img src={linkedin} alt="gitlab" />
+						<span class="profile-link-name">LinkedIn</span>
+					</a>
+					<a href="https://medium.com/bmorashad" target="_blank" class="profile-link medium-blog">
+						<img src={medium} alt="gitlab" />
+						<span class="profile-link-name">Medium</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="scroll-dwn">
+		<ScrollDown />
+	</div>
+</div>
+
+<style>
+	.scroll-dwn {
+		grid-area: 2 / 2 / 3 / 3;
+		justify-self: center;
+		padding: 0rem 0;
+	}
+	.profile-container {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: minmax(500px, auto) minmax(200px, auto);
+		height: calc(100vh - 80px);
+		min-height: 650px;
+		/* padding-top: 50px; */
+		/* padding-bottom: 180px; */
+	}
+	.profile-link-container {
+		display: flex;
+		/* flex-direction: column; */
+		grid-area: 2 / 2 / 3 / 3;
+		align-self: end;
+		justify-self: center;
+		margin-top: 5rem;
+	}
+	.profile-link img {
+		margin-right: 1rem;
+		width: 2.2rem;
+	}
+	.profile-link {
+		padding: 0.6rem;
+		padding-right: 1.7rem;
+		margin-right: 2rem;
+		border-radius: 5px;
+		font-weight: 500;
+		font-size: 1.4rem;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+	.profile-link:last-child {
+		margin-right: 0;
+	}
+
+	.gitlab {
+		color: var(--profile-link-gitlab-color);
+		background: var(--profile-link-gitlab-bg-color);
+		border: var(--profile-link-gitlab-border);
+	}
+	.github {
+		color: var(--profile-link-github-color);
+		background: var(--profile-link-github-bg-color);
+		border: var(--profile-link-github-border);
+	}
+	.linkedin {
+		color: var(--profile-link-linkedin-color);
+		background: var(--profile-link-linkedin-bg-color);
+		border: var(--profile-link-linkedin-border);
+	}
+	.medium-blog {
+		color: var(--profile-link-medium-color);
+		background: var(--profile-link-medium-bg-color);
+		border: var(--profile-link-medium-border);
+	}
+	.profile-link:hover {
+		transition: 0.2s;
+	}
+
+	.gitlab:hover {
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-gitlab-bg-color-hover);
+		border: var(--profile-link-gitlab-border-hover);
+	}
+	.github:hover {
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-github-bg-color-hover);
+		border: var(--profile-link-github-border-hover);
+	}
+	.linkedin:hover {
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-linkedin-bg-color-hover);
+		border: var(--profile-link-linkedin-border-hover);
+	}
+	.medium-blog:hover {
+		color: var(--profile-link-color-hover);
+		background: var(--profile-link-medium-bg-color-hover);
+		border: var(--profile-link-medium-border-hover);
+	}
+
+	.profile-link:active {
+		transform: translateY(0px);
+		transition: ease-out 0.1s;
+	}
+
+	.profile-des-hsl {
+		color: var(--profile-des-hsl-color);
+		/* background: #fff; */
+	}
+	.profile-des-right {
+		padding-left: 6rem;
+	}
+	.profile-description {
+		font-size: 2.2rem;
+		color: var(--profile-des-color);
+	}
+	.profile-detail {
+		padding: 0 0rem 0rem 0rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+	.profile-role {
+		font-size: 2.2rem;
+		color: var(--profile-role-color);
+	}
+	.profile-name {
+		font-size: 4.4rem;
+		color: var(--profile-name-color);
+		margin: 1rem 0 3rem 0;
+	}
+	.profile-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* padding-top: 100px; */
+	}
+
+	.profile-wrapper {
+		grid-area: 1 / 2 / 2 / 3;
+		align-self: center;
+		justify-self: center;
+		/* padding-bottom: 1vh; */
+	}
+	.profile-picture-clip {
+		padding: 50px 50px 0 50px;
+		clip-path: circle(110px at center);
+		background: var(--profile-picture-clip-bg-gradient-color);
+	}
+
+	.profile-picture-wrapper {
+		/* border-radius: 50%; */
+	}
+
+	img.profile-pic {
+		width: 100%;
+		max-width: calc(9vw + 40px);
+		min-width: 190px;
+		filter: var(--profile-picture-filter);
+		/* border-radius: 50%; */
+	}
+	@media only screen and (max-width: 1000px) {
+		.profile-content {
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.profile-picture-clip {
+			padding: 42px 50px 0 50px;
+			clip-path: circle(83px at center);
+		}
+		.profile-detail {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.profile-description {
+			text-align: center;
+		}
+		.profile-des-right {
+			padding-left: 0;
+		}
+		.profile-wrapper {
+			align-self: center;
+		}
+		.profile-container {
+			grid-template-rows: minmax(600px, auto) minmax(200px, auto);
+			/* grid-template-rows: minmax(475px, auto) minmax(200px, auto); */
+			grid-gap: 30px 0px;
+			height: auto;
+		}
+		img.profile-pic {
+			min-width: 150px;
+		}
+	}
+	@media only screen and (max-width: 850px) {
+		.profile-container {
+			display: grid;
+			grid-template-columns: 1fr auto 1fr;
+			grid-template-rows: minmax(475px, auto) auto;
+			height: calc(100vh - 80px);
+			min-height: 650px;
+			/* padding-top: 50px; */
+			/* padding-bottom: 180px; */
+		}
+	}
+	@media only screen and (max-width: 650px) {
+		.profile-container {
+			grid-template-columns: auto;
+			grid-template-rows: auto auto;
+			height: auto;
+		}
+		.profile-wrapper {
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		.scroll-dwn {
+			grid-area: 2 / 1 / 3 / 2;
+		}
+		.profile-name {
+			font-size: 4rem;
+		}
+		.profile-description {
+			/* font-size: 2rem; */
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.profile-link-name {
+			display: none;
+		}
+		.profile-link img {
+			width: 3rem;
+			margin-right: 0;
+		}
+		.profile-link {
+			padding: 0.6rem;
+			padding-right: 0.6rem;
+		}
+		.profile-link-container {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.profile-picture-clip {
+			padding: 35px 50px 0 50px;
+			clip-path: circle(70px at center);
+		}
+		img.profile-pic {
+			min-width: 130px;
+		}
+	}
+</style>

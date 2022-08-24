@@ -1,0 +1,429 @@
+:root {
+	--background: linear-gradient(180deg, rgb(202 244 251 / 28%) 0%, rgb(133 203 255 / 10%) 100%),
+		#f4f8fb;
+	--background: linear-gradient(180deg, rgb(202 244 251 / 28%) 0%, rgb(229 244 255 / 10%) 100%),
+		#f4f8fb;
+	--profile-name-color: #001357;
+	--profile-role-color: #5c6dff;
+	--profile-des-hsl-color: #001357;
+	--profile-des-color: #001357;
+
+	--profile-link-gitlab-color: #fc6d26;
+	--profile-link-github-color: #231e1b;
+	--profile-link-linkedin-color: #2867b2;
+	--profile-link-medium-color: #000;
+
+	--profile-link-gitlab-bg-color: rgba(252, 109, 38, 0.1);
+	--profile-link-github-bg-color: rgba(35, 30, 27, 0.1);
+	--profile-link-linkedin-bg-color: rgba(40, 103, 178, 0.1);
+	--profile-link-medium-bg-color: rgba(0, 0, 0, 0.1);
+
+	--profile-link-gitlab-border: 2px solid var(--profile-link-gitlab-color);
+	--profile-link-github-border: 2px solid var(--profile-link-github-color);
+	--profile-link-linkedin-border: 2px solid var(--profile-link-linkedin-color);
+	--profile-link-medium-border: 2px solid var(--profile-link-medium-color);
+
+	--profile-link-color-hover: #fff;
+
+	/* --profile-link-gitlab-color-hover: #fc6d26;
+	--profile-link-github-color-hover: #231e1b;
+	--profile-link-linkedin-color-hover: #2867b2;
+	--profile-link-medium-color-hover: #000; */
+
+	--profile-link-gitlab-bg-color-hover: rgba(252, 109, 38, 1);
+	--profile-link-github-bg-color-hover: rgba(35, 30, 27, 1);
+	--profile-link-linkedin-bg-color-hover: rgba(40, 103, 178, 1);
+	--profile-link-medium-bg-color-hover: rgba(0, 0, 0, 1);
+
+	--profile-link-gitlab-border-hover: 2px solid var(--profile-link-gitlab-color);
+	--profile-link-github-border-hover: 2px solid var(--profile-link-github-color);
+	--profile-link-linkedin-border-hover: 2px solid var(--profile-link-linkedin-color);
+	--profile-link-medium-border-hover: 2px solid var(--profile-link-medium-color);
+
+	--navbar-bg-color: #0075ff;
+	--navbar-border-color: #90e6ff;
+
+	--menu-link-color: #e9f3ff;
+	--menu-link-hover-color: #fff;
+
+	--social-link-hover-color: #fff;
+
+	--content-title-hsl-color1: #0094ff;
+	--content-title-hsl-color2: #884fc1;
+	--education-content-title-hsl-color: #0094ff;
+	--content-title-color: #3b5462;
+	--content-des-color: #3b5462;
+
+	--content-des-dark-color: #141414;
+
+	--education-place-color: #0085ff;
+
+	--profile-picture-clip-bg-gradient-color: linear-gradient(
+			180deg,
+			rgba(6, 202, 84, 0.2) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgba(255, 0, 184, 0.26) 66.67%,
+			rgba(1, 179, 255, 0.2) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		);
+	--profile-picture-filter: none;
+	--profile-picture-filter: brightness(1.2);
+	/* --profile-picture-clip-bg-gradient-color: linear-gradient(
+			180deg,
+			rgb(6 202 84 / 75%) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgb(255 0 184 / 44%) 66.67%,
+			rgb(1 114 255 / 63%) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		); */
+
+	--skill-tag-bg-color: rgba(255, 255, 255, 0.6);
+	--skill-tag-border: 2px solid #7bb8ff;
+	--skill-tag-color: #00209e;
+	/* --skill-tag-box-shadow: 0px 4px 4px #c7ecff; */
+
+	--scroll-down-color1: #005230;
+	--scroll-down-color2: #1c4591;
+
+	--footer-bg-color: #2b739b;
+	--footer-label-color: #d3efff;
+
+	--work-card-border: 1px solid #a2c6e3;
+	--work-card-bg-color: rgba(255, 255, 255, 0.4);
+	--work-heading-color: #2c719b;
+	--work-des-color: #3c4146;
+
+	--contact-email-bg-color: rgba(255, 255, 255, 0.1);
+	--contact-email-color: #ca4646;
+	--contact-linkedin-bg-color: rgba(255, 255, 255, 0.1);
+	--contact-linkedin-color: #2867b2;
+
+	--contact-email-bg-color-hover: hsl(0, 55%, 53%);
+	--contact-email-color-hover: hsl(0, 55%, 93%);
+	--contact-linkedin-bg-color-hover: hsl(213, 63%, 53%);
+	--contact-linkedin-color-hover: hsl(213, 63%, 93%);
+
+	--contact-linkedin-box-shadow-color: 6px 6px 0 hsl(213, 63%, 93%);
+	--contact-email-box-shadow-color: 6px 6px 0 hsl(0, 55%, 93%);
+
+	--contact-linkedin-box-shadow-color-hover: 8px 8px 2px hsl(213, 63%, 83%);
+	--contact-email-box-shadow-color-hover: 8px 8px 2px hsl(0, 55%, 83%);
+
+	--contact-email-border-color: #ca4646;
+	--contact-linkedin-border-color: #2867b2;
+
+	--card-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	--shadow-color: 196deg 20% 63%;
+	--shadow-elevation-low: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.48),
+		-0.1px 1.5px 1.4px -1.9px hsl(var(--shadow-color) / 0.37),
+		-0.3px 3.9px 3.7px -3.7px hsl(var(--shadow-color) / 0.27);
+	--shadow-elevation-medium: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.4),
+		-0.2px 1.9px 1.8px -0.9px hsl(var(--shadow-color) / 0.35),
+		-0.4px 4.1px 3.9px -1.9px hsl(var(--shadow-color) / 0.29),
+		-0.8px 9.4px 8.8px -2.8px hsl(var(--shadow-color) / 0.24),
+		-1.7px 19.3px 18.2px -3.7px hsl(var(--shadow-color) / 0.19);
+	--shadow-elevation-high: -0.1px 1px 0.9px hsl(var(--shadow-color) / 0.37),
+		-0.2px 2.8px 2.6px -0.4px hsl(var(--shadow-color) / 0.35),
+		-0.4px 5px 4.7px -0.8px hsl(var(--shadow-color) / 0.32),
+		-0.7px 8.2px 7.7px -1.2px hsl(var(--shadow-color) / 0.3),
+		-1.2px 13.3px 12.5px -1.7px hsl(var(--shadow-color) / 0.27),
+		-1.8px 21px 19.8px -2.1px hsl(var(--shadow-color) / 0.25),
+		-2.8px 32.1px 30.2px -2.5px hsl(var(--shadow-color) / 0.22),
+		-4.1px 47.3px 44.5px -2.9px hsl(var(--shadow-color) / 0.2),
+		-5.8px 67.3px 63.3px -3.3px hsl(var(--shadow-color) / 0.17),
+		-8px 93px 87.5px -3.7px hsl(var(--shadow-color) / 0.15);
+}
+:root[data-theme='dark'] {
+	--background: #172731;
+	--background: #172531;
+	--profile-name-color: #e6fdff;
+	--profile-role-color: #ff71fb;
+	--profile-des-hsl-color: #e6fdff;
+	--profile-des-color: #e6fdff;
+
+	--profile-link-gitlab-color: #ffdfcf;
+	--profile-link-github-color: #ffefe7;
+	--profile-link-linkedin-color: #c7e0ff;
+	--profile-link-medium-color: #e3e3e3;
+
+	--profile-link-gitlab-bg-color: rgba(70, 30, 10, 1);
+	--profile-link-github-bg-color: rgba(38, 32, 29, 1);
+	--profile-link-linkedin-bg-color: rgba(18, 48, 82, 1);
+	--profile-link-medium-bg-color: rgba(40, 40, 40, 1);
+
+	--profile-link-gitlab-border: 2px solid #8f3c13;
+	--profile-link-github-border: 2px solid #4a403a;
+	--profile-link-linkedin-border: 2px solid #1d4c85;
+	--profile-link-medium-border: 2px solid #444444;
+
+	--profile-link-color-hover: #fff;
+
+	/* --profile-link-gitlab-color-hover: #fc6d26;
+	--profile-link-github-color-hover: #231e1b;
+	--profile-link-linkedin-color-hover: #2867b2;
+	--profile-link-medium-color-hover: #000; */
+
+	--profile-link-gitlab-bg-color-hover: #8f3c13;
+	--profile-link-github-bg-color-hover: #4a403a;
+	--profile-link-linkedin-bg-color-hover: #1d4c85;
+	--profile-link-medium-bg-color-hover: #444444;
+
+	--profile-link-gitlab-border-hover: 2px solid #8f3c13;
+	--profile-link-github-border-hover: 2px solid #4a403a;
+	--profile-link-linkedin-border-hover: 2px solid #1d4c85;
+	--profile-link-medium-border-hover: 2px solid #444444;
+
+	--navbar-bg-color: #003d63;
+	--navbar-border-color: #00c1aa;
+
+	--menu-link-color: #00bf7a;
+	--menu-link-hover-color: #00da8b;
+
+	--social-link-hover-color: #fff;
+
+	--content-title-hsl-color1: #d38dff;
+	--content-title-hsl-color2: #617bff;
+	--education-content-title-hsl-color: #617bff;
+	--content-title-color: #e6f6ff;
+	--content-des-color: #e6f6ff;
+
+	--content-des-dark-color: #fff;
+
+	--education-place-color: #4db5ff;
+
+	--profile-picture-clip-bg-gradient-color: linear-gradient(
+			180deg,
+			rgb(6 202 84 / 75%) 0%,
+			rgba(140, 255, 248, 0.2) 33.33%,
+			rgb(255 0 184 / 44%) 66.67%,
+			rgb(1 114 255 / 63%) 100%
+		),
+		linear-gradient(
+			180deg,
+			#2dfff2 -83.05%,
+			rgba(63, 243, 255, 0.796875) 30.63%,
+			rgba(135, 147, 255, 0) 126.82%
+		);
+
+	--profile-picture-filter: brightness(1.2);
+
+	--skill-tag-bg-color: rgb(0 26 42 / 32%);
+	--skill-tag-border: 2px solid #4b788e;
+	--skill-tag-color: #f8fcff;
+	/* --skill-tag-box-shadow: 0px 4px 4px #000000; */
+	--skill-tag-box-shadow: 0px 0px 0px #c7ecff;
+
+	--scroll-down-color1: #62e7b1;
+	--scroll-down-color2: #afd2ff;
+
+	--footer-bg-color: #2d3c46;
+	--footer-label-color: #d3efff;
+
+	--work-card-border: 1px solid #36414c;
+	--work-card-bg-color: rgb(25 40 52);
+	--work-heading-color: #03b38b;
+	--work-des-color: #d6e9f9;
+
+	--contact-email-bg-color: rgba(32, 44, 54, 0.65);
+	--contact-email-color: hsl(0, 55%, 83%);
+	--contact-linkedin-bg-color: rgba(32, 44, 54, 0.65);
+	--contact-linkedin-color: hsl(213, 63%, 83%);
+
+	--contact-email-bg-color-hover: hsl(0, 55%, 53%);
+	--contact-email-color-hover: hsl(0, 55%, 93%);
+	--contact-linkedin-bg-color-hover: hsl(213, 63%, 53%);
+	--contact-linkedin-color-hover: hsl(213, 63%, 93%);
+
+	--contact-linkedin-box-shadow-color: 6px 6px 0 hsl(190, 60%, 14%);
+	--contact-email-box-shadow-color: 6px 6px 0 hsl(0, 60%, 15%);
+
+	--contact-linkedin-box-shadow-color-hover: 6px 6px 0 hsl(190, 60%, 24%);
+	--contact-email-box-shadow-color-hover: 6px 6px 0 hsl(0, 60%, 25%);
+
+	--contact-email-border-color: hsl(0deg 18% 55%);
+	--contact-linkedin-border-color: hsl(213deg 22% 61%);
+
+	--shadow-color: 204deg 56% 3%;
+	--shadow-elevation-low: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.72),
+		0.4px 0.9px 1px -1.7px hsl(var(--shadow-color) / 0.59),
+		1.3px 2.5px 2.8px -3.4px hsl(var(--shadow-color) / 0.45);
+	--shadow-elevation-medium: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.6),
+		0.6px 1.2px 1.3px -0.9px hsl(var(--shadow-color) / 0.54),
+		1.3px 2.7px 2.9px -1.7px hsl(var(--shadow-color) / 0.47),
+		3px 6.1px 6.7px -2.6px hsl(var(--shadow-color) / 0.4),
+		6.3px 12.5px 13.8px -3.4px hsl(var(--shadow-color) / 0.34);
+	--shadow-elevation-high: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.56),
+		1.2px 2.3px 2.5px -0.4px hsl(var(--shadow-color) / 0.53),
+		2.2px 4.3px 4.7px -0.8px hsl(var(--shadow-color) / 0.5),
+		3.6px 7.1px 7.8px -1.1px hsl(var(--shadow-color) / 0.47),
+		5.7px 11.3px 12.4px -1.5px hsl(var(--shadow-color) / 0.44),
+		8.8px 17.6px 19.3px -1.9px hsl(var(--shadow-color) / 0.41),
+		13.2px 26.4px 29px -2.3px hsl(var(--shadow-color) / 0.38),
+		19.3px 38.5px 42.3px -2.7px hsl(var(--shadow-color) / 0.34),
+		27.3px 54.5px 59.9px -3.1px hsl(var(--shadow-color) / 0.31),
+		37.5px 75px 82.4px -3.4px hsl(var(--shadow-color) / 0.28);
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Lexend Deca', sans-serif;
+}
+body {
+	/* height: 100vh; */
+	max-height: 100%;
+	/* background-color: var(--background); */
+	background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%),
+		F4F8FB;
+	background: var(--background);
+}
+button {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+section {
+	position: relative;
+}
+.light {
+	font-weight: 300;
+}
+
+.regular {
+	font-weight: 400;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.margin-0 {
+	margin: 0;
+}
+.display-none {
+	display: none;
+}
+
+.content {
+	padding: 0px clamp(10px, 10vw, 170px);
+}
+
+.content-title {
+	font-size: 3.8rem;
+	margin-bottom: 3rem;
+	font-weight: 500;
+	color: var(--content-title-color);
+	max-width: 30ch;
+}
+.content-title-hsl1 {
+	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+	color: var(--content-title-hsl-color1);
+	font-weight: 700;
+}
+.content-title-hsl2 {
+	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+	color: var(--content-title-hsl-color2);
+	font-weight: 700;
+}
+
+.content-des {
+	font-size: 1.8rem;
+	max-width: 38ch;
+	font-weight: 400;
+	color: var(--content-des-color);
+}
+
+.flex {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.items-center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+
+.flex-direction-column {
+	flex-direction: column;
+}
+.mt-section-xlg {
+	margin-top: 10rem;
+}
+.mr-medium {
+	margin-right: 5rem;
+}
+.ml-medium {
+	margin-left: 5rem;
+}
+.text-center {
+	text-align: center;
+}
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+	html {
+		font-size: 9.5px;
+	}
+	.content {
+		padding: 0px clamp(60px, 5vw, 100px);
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	html {
+		font-size: 9px;
+	}
+	.content-des {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 650px) {
+	html {
+		/* font-size: 8.8px; */
+	}
+	.content {
+		padding: 0px clamp(40px, 5vw, 100px);
+	}
+	.content-title {
+		/* font-size: 3.2rem; */
+		max-width: 20ch;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.content {
+		padding: 0px clamp(35px, 5vw, 100px);
+	}
+}
+@media only screen and (max-width: 430px) {
+	html {
+		font-size: 8px;
+	}
+}
