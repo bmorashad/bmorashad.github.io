@@ -133,7 +133,7 @@
 	@media only screen and (max-width: 1000px) {
 		.works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			grid-gap: 20px;
+			grid-gap: 18px 20px;
 		}
 	}
 	@media only screen and (max-width: 850px) {
