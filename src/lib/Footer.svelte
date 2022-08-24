@@ -109,5 +109,11 @@
 			padding-top: 0;
 			padding-bottom: 0;
 		}
+		.footer-label h3 {
+			font-size: 2.4rem;
+		}
+		.link img {
+			width: 4rem;
+		}
 	}
 </style>
