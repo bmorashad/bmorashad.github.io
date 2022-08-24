@@ -1,92 +1,70 @@
 <script>
 	const skills = [
 		{
-			name: 'Java',
-			icon: java
+			name: 'Java'
 		},
 		{
-			name: 'Python',
-			icon: python
+			name: 'Python'
 		},
 		{
-			name: 'React',
-			icon: react
+			name: 'React'
 		},
 		{
-			name: 'Nginx',
-			icon: nginx
+			name: 'Nginx'
 		},
 		{
-			name: 'Angular',
-			icon: angular
+			name: 'Angular'
 		},
 		{
-			name: 'Flask',
-			icon: flask
+			name: 'Flask'
 		},
 		{
-			name: 'MySql',
-			icon: sql
+			name: 'MySql'
 		},
 		{
-			name: 'MongoDB',
-			icon: mongodb
+			name: 'MongoDB'
 		},
 		{
-			name: 'Linux',
-			icon: linux
+			name: 'Linux'
 		},
 		{
-			name: 'NodeJS',
-			icon: nodejs
+			name: 'NodeJS'
 		},
 		{
-			name: 'Play Framework',
-			icon: playframework
+			name: 'Play Framework'
 		},
 		{
-			name: 'Express',
-			icon: playframework
+			name: 'Express'
 		},
 		{
-			name: 'AWS',
-			icon: aws
+			name: 'AWS'
 		},
 		{
-			name: 'Figma',
-			icon: figma
+			name: 'Figma'
 		},
 		{
-			name: 'Spring Boot',
-			icon: aws
+			name: 'Spring Boot'
 		},
 		{
-			name: 'Github CI/CD',
-			icon: aws
+			name: 'Github CI/CD'
 		},
 		{
-			name: 'Docker',
-			icon: aws
+			name: 'Docker'
 		},
 		{
-			name: 'Bash',
-			icon: aws
+			name: 'Bash'
 		},
 		{
-			name: 'Gitlab CI/CD',
-			icon: aws
+			name: 'Gitlab CI/CD'
 		},
 		{
-			name: 'HTML',
-			icon: aws
+			name: 'HTML'
 		},
 		{
-			name: 'CSS',
-			icon: aws
+			name: 'CSS'
 		},
 		{
-			name: 'Grafana',
-			icon: aws
+			name: 'Grafana'
 		}
 	];
 </script>
