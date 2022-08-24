@@ -74,8 +74,8 @@
 	}
 	.works-wrapper {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 30px;
 	}
 	.work-card {
 		background: var(--work-card-bg-color);
@@ -129,13 +129,25 @@
 		top: 16px;
 		transition: 50ms;
 	}
+	@media only screen and (max-width: 1000px) {
+		.works-wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-gap: 20px;
+		}
+	}
 	@media only screen and (max-width: 850px) {
 		.works-container {
 			margin-top: 8rem;
 		}
-		.works-wrapper {
+		/* .works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			grid-gap: 20px;
+		} */
+	}
+	@media only screen and (max-width: 500px) {
+		.works-wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			grid-gap: 10px;
 		}
 	}
 </style>

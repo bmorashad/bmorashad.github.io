@@ -45,7 +45,7 @@
 		display: grid;
 		/* grid-template-columns: minmax(40px, 0.5fr) 20fr 20fr; */
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 5rem;
+		grid-gap: 0 5rem;
 	}
 	.contact {
 		/* padding: 8rem; */
@@ -127,7 +127,7 @@
 		.contact-container {
 			grid-template-columns: 1fr;
 			justify-content: center;
-			grid-gap: 8rem;
+			grid-gap: 8rem 0;
 			margin-top: 10rem;
 		}
 		.content-title-contact {
@@ -148,11 +148,14 @@
 			justify-items: center;
 			grid-template-columns: auto auto;
 		}
-	}
-	@media only screen and (max-width: 550px) {
 		.contact {
-			width: clamp(130px, 35vw, 200px);
+			width: clamp(130px, 35vw, 250px);
 			height: clamp(130px, 35vw, 250px);
+		}
+	}
+	@media only screen and (max-width: 650px) {
+		.contact-wrapper {
+			grid-gap: 0 3rem;
 		}
 	}
 </style>

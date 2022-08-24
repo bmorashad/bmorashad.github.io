@@ -34,19 +34,19 @@
 				<div class="profile-link-container">
 					<a href="https://gitlab.com/bmorashad" target="_blank" class="profile-link gitlab">
 						<img src={gitlab} alt="gitlab" />
-						Gitlab
+						<span class="profile-link-name">Gitlab</span>
 					</a>
 					<a href="https://github.com/bmorashad" target="_blank" class="profile-link github">
 						<img src={github} alt="gitlab" />
-						Github
+						<span class="profile-link-name">Github</span>
 					</a>
 					<a href="https://linkedin.com/bmorashad" target="_blank" class="profile-link linkedin">
 						<img src={linkedin} alt="gitlab" />
-						LinkedIn
+						<span class="profile-link-name">LinkedIn</span>
 					</a>
 					<a href="https://medium.com/bmorashad" target="_blank" class="profile-link medium-blog">
 						<img src={medium} alt="gitlab" />
-						Medium
+						<span class="profile-link-name">Medium</span>
 					</a>
 				</div>
 			</div>
@@ -82,8 +82,6 @@
 	}
 	.profile-link img {
 		margin-right: 1rem;
-	}
-	.profile-link img {
 		width: 2.2rem;
 	}
 	.profile-link {
@@ -241,7 +239,7 @@
 			min-width: 150px;
 		}
 	}
-	@media only screen and (max-width: 550px) {
+	@media only screen and (max-width: 650px) {
 		.profile-container {
 			grid-template-columns: auto;
 		}
@@ -250,6 +248,40 @@
 		}
 		.scroll-dwn {
 			grid-area: 2 / 1 / 3 / 2;
+		}
+	}
+	@media only screen and (max-width: 650px) {
+		.profile-name {
+			font-size: 3.8rem;
+		}
+		.profile-description {
+			font-size: 2rem;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.profile-link-name {
+			display: none;
+		}
+		.profile-link img {
+			width: 2.5rem;
+			margin-right: 0;
+		}
+		.profile-link {
+			padding: 0.6rem;
+			padding-right: 0.6rem;
+		}
+		.profile-link-container {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.profile-picture-clip {
+			padding: 35px 50px 0 50px;
+			clip-path: circle(70px at center);
+		}
+		img.profile-pic {
+			min-width: 130px;
 		}
 	}
 </style>

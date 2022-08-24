@@ -330,6 +330,7 @@ section {
 	margin-bottom: 3rem;
 	font-weight: 500;
 	color: var(--content-title-color);
+	max-width: 30ch;
 }
 .content-title-hsl1 {
 	/* background: radial-gradient(21.06% 3124.17% at 21.06% 50%, #0094ff 0%, #00c2ff 100%);
@@ -401,11 +402,28 @@ text-fill-color: transparent; */
 		font-size: 9px;
 	}
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
 	html {
-		font-size: 8.5px;
+		/* font-size: 8.8px; */
 	}
 	.content {
 		padding: 0px clamp(40px, 5vw, 100px);
+	}
+	.content-title {
+		/* font-size: 3.2rem; */
+		max-width: 20ch;
+	}
+	/* .content-des {
+		font-size: 
+	} */
+}
+@media only screen and (max-width: 500px) {
+	.content {
+		padding: 0px clamp(35px, 5vw, 100px);
+	}
+}
+@media only screen and (max-width: 430px) {
+	html {
+		font-size: 8px;
 	}
 }
