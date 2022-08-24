@@ -139,6 +139,17 @@
 		.works-container {
 			margin-top: 8rem;
 		}
+		.work-heading h3 {
+			font-size: 2rem;
+		}
+		.work-des {
+			padding: 2.5rem 3rem;
+			padding-top: 0;
+		}
+		.work-heading {
+			padding: 2.5rem 3rem;
+			cursor: pointer;
+		}
 		/* .works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			grid-gap: 20px;

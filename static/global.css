@@ -401,6 +401,9 @@ text-fill-color: transparent; */
 	html {
 		font-size: 9px;
 	}
+	.content-des {
+		font-size: 2rem;
+	}
 }
 @media only screen and (max-width: 650px) {
 	html {
@@ -413,9 +416,6 @@ text-fill-color: transparent; */
 		/* font-size: 3.2rem; */
 		max-width: 20ch;
 	}
-	/* .content-des {
-		font-size: 
-	} */
 }
 @media only screen and (max-width: 500px) {
 	.content {
