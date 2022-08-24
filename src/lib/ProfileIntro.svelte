@@ -83,8 +83,9 @@
 		width: 2.6rem;
 	}
 	.profile-link {
-		padding: 0.6rem;
-		padding-right: 1.7rem;
+		padding: 0.5rem;
+		padding-right: 2rem;
+		padding-left: 0.6rem;
 		margin-right: 2rem;
 		border-radius: 5px;
 		font-weight: 500;
