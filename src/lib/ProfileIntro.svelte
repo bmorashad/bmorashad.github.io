@@ -1,10 +1,10 @@
 <script>
-	import profilePic from '$lib/assets/profile_pic.png';
-	import gitlab from '$lib/assets/gitlab.svg';
-	import github from '$lib/assets/github.svg';
-	import linkedin from '$lib/assets/linkedin.svg';
-	import medium from '$lib/assets/medium.svg';
-	import ScrollDown from '$lib/ScrollDown.svelte';
+	import profilePic from '../assets/profile_pic.png';
+	import gitlab from '../assets/gitlab.svg';
+	import github from '../assets/github.svg';
+	import linkedin from '../assets/linkedin.svg';
+	import medium from '../assets/medium.svg';
+	import ScrollDown from '../lib/ScrollDown.svelte';
 </script>
 
 <div class="profile-container">

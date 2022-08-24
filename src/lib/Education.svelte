@@ -1,6 +1,6 @@
 <script>
-	import educationPic from '$lib/assets/education-bg.svg';
-	import educationPicDark from '$lib/assets/education-bg-dark.svg';
+	import educationPic from '../assets/education-bg.svg';
+	import educationPicDark from '../assets/education-bg-dark.svg';
 	export let darkMode = false;
 </script>
 

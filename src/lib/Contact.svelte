@@ -1,10 +1,10 @@
 <script>
 	export let darkMode = false;
 	let email = 'bmorashad@gmail.com';
-	import linkedinDMIcon from '$lib/assets/linkedinDM.svg';
-	import emailIcon from '$lib/assets/email.svg';
-	import linkedinDMIconDark from '$lib/assets/linkedinDM-dark.svg';
-	import emailIconDark from '$lib/assets/email-dark.svg';
+	import linkedinDMIcon from '../assets/linkedinDM.svg';
+	import emailIcon from '../assets/email.svg';
+	import linkedinDMIconDark from '../assets/linkedinDM-dark.svg';
+	import emailIconDark from '../assets/email-dark.svg';
 </script>
 
 <section class="contact-container" id="contact">

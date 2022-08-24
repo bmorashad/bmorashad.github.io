@@ -1,7 +1,7 @@
 <script>
 	export let darkMode = false;
-	import ExternalLink from '$lib/ExternalLink.svelte';
-	import ExternalLinkHover from '$lib/ExternalLinkHover.svelte';
+	import ExternalLink from '../lib/ExternalLink.svelte';
+	import ExternalLinkHover from '../lib/ExternalLinkHover.svelte';
 
 	const works = [
 		{

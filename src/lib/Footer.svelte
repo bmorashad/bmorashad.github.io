@@ -1,8 +1,8 @@
 <script>
-	import gitlab from '$lib/assets/gitlab-white.svg';
-	import github from '$lib/assets/github-white.svg';
-	import linkedin from '$lib/assets/linkedin-white.svg';
-	import medium from '$lib/assets/medium-white.svg';
+	import gitlab from '../assets/gitlab-white.svg';
+	import github from '../assets/github-white.svg';
+	import linkedin from '../assets/linkedin-white.svg';
+	import medium from '../assets/medium-white.svg';
 </script>
 
 <div class="footer">
