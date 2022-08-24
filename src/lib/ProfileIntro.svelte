@@ -4,8 +4,6 @@
 	import github from '$lib/assets/github.svg';
 	import linkedin from '$lib/assets/linkedin.svg';
 	import medium from '$lib/assets/medium.svg';
-	import scroll from '$lib/assets/scroll-down.gif';
-	import scrollDark from '$lib/assets/scroll-down-dark.gif';
 	import ScrollDown from '$lib/ScrollDown.svelte';
 </script>
 

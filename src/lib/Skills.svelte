@@ -1,19 +1,4 @@
 <script>
-	import java from '$lib/assets/java.png';
-	import nginx from '$lib/assets/nginx.png';
-	import react from '$lib/assets/react.png';
-	import aws from '$lib/assets/aws.png';
-	import nodejs from '$lib/assets/nodejs.png';
-	import angular from '$lib/assets/angular.png';
-	import python from '$lib/assets/python.png';
-	import flask from '$lib/assets/flask.png';
-	import sql from '$lib/assets/sql.png';
-	import mongodb from '$lib/assets/mongodb.png';
-	import linux from '$lib/assets/linux.png';
-	import terminal from '$lib/assets/terminal.png';
-	import playframework from '$lib/assets/playframework.png';
-	import figma from '$lib/assets/figma.png';
-
 	const skills = [
 		{
 			name: 'Java',
