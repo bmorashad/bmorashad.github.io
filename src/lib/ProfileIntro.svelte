@@ -104,7 +104,7 @@
 		background: var(--profile-link-linkedin-bg-color);
 		border: var(--profile-link-linkedin-border);
 	}
-	.medium {
+	.medium-blog {
 		color: var(--profile-link-medium-color);
 		background: var(--profile-link-medium-bg-color);
 		border: var(--profile-link-medium-border);
@@ -128,7 +128,7 @@
 		background: var(--profile-link-linkedin-bg-color-hover);
 		border: var(--profile-link-linkedin-border-hover);
 	}
-	.medium:hover {
+	.medium-blog:hover {
 		color: var(--profile-link-color-hover);
 		background: var(--profile-link-medium-bg-color-hover);
 		border: var(--profile-link-medium-border-hover);
