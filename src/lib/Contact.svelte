@@ -1,5 +1,6 @@
 <script>
 	export let darkMode = false;
+	import { contactLinks } from '../../public/data.json';
 	let email = 'bmorashad@gmail.com';
 	import linkedinDMIcon from '../assets/linkedinDM.svg';
 	import emailIcon from '../assets/email.svg';
@@ -13,21 +14,21 @@
 		<h5 class="content-des content-contact-des regular">Feel free to contact me via these :)</h5>
 	</div>
 	<div class="contact-wrapper">
-		<a class="contact contact-email" href={`mailto:${email}`}>
+		<a class="contact contact-email" href={`mailto:${contactLinks.gmail.link}`} target="_blank">
 			{#if darkMode}
 				<img src={emailIconDark} alt="email" />
 			{:else}
 				<img src={emailIcon} alt="email" />
 			{/if}
-			<h3>Email</h3>
+			<h3>{contactLinks.gmail.name}</h3>
 		</a>
-		<a class="contact contact-linkedin" href={`https://linkedin.com/bmorashad`}>
+		<a class="contact contact-linkedin" href={contactLinks.linkedin.link} target="_blank">
 			{#if darkMode}
 				<img src={linkedinDMIconDark} alt="linkedin direct message" />
 			{:else}
 				<img src={linkedinDMIcon} alt="linkedin direct message" />
 			{/if}
-			<h3>LinkedIn</h3></a
+			<h3>{contactLinks.linkedin.name}</h3></a
 		>
 	</div>
 </section>

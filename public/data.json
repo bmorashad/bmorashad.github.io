@@ -20,8 +20,17 @@
 			"description": "This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK",
 			"link": "https://github/bmorashad/dotfiles"
 		}
-	]
-	,
+	],
+	"contactLinks": {
+		"linkedin": {
+			"link": "https://www.linkedin.com/in/bmorashad/",
+			"name": "LinkedIn"
+		},
+		"gmail": {
+			"link": "bmorashad@gmail.com",
+			"name": "Email"
+		}
+	},
 	"socialLinks": [
 		{
 			"name": "Gitlab",
