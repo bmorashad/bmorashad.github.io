@@ -38,14 +38,15 @@
 		grid-template-columns: auto auto;
 		align-items: center;
 		justify-content: center;
-		margin-top: 16rem;
-		grid-gap: clamp(50px, 20vw, 100px);
+		/* margin-top: 16rem; */
+		margin-top: clamp(80px, 9vw, 140px);
+		grid-gap: clamp(50px, 20vw, 85px);
 	}
 	.contact-wrapper {
 		display: grid;
 		/* grid-template-columns: minmax(40px, 0.5fr) 20fr 20fr; */
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 0 5rem;
+		grid-gap: 0 3rem;
 	}
 	.contact {
 		/* padding: 8rem; */
@@ -59,8 +60,8 @@
 		text-decoration: none;
 		background: var(--contact-email-bg-color);
 		opacity: 0.87;
-		width: clamp(250px, 15vw, 400px);
-		height: clamp(250px, 15vw, 350px);
+		width: clamp(250px, 14vw, 400px);
+		height: clamp(250px, 14vw, 350px);
 	}
 	.contact:hover {
 		transition: 200ms;
@@ -128,7 +129,7 @@
 			grid-template-columns: 1fr;
 			justify-content: center;
 			grid-gap: 8rem 0;
-			margin-top: 10rem;
+			/* margin-top: 10rem; */
 		}
 		.content-title-contact {
 			text-align: center;

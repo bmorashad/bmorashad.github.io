@@ -21,7 +21,7 @@
 				<h1 class="profile-name semi-bold">Hello, I'm Rashad!</h1>
 				<p class="profile-description light">
 					<span class="profile-des-left"
-						><span class="profile-des-hsl regular">Linux & OSS</span> enthusiast with a
+						>I'm a <span class="profile-des-hsl regular">Linux </span> enthusiast with a
 						<span>
 							<br /><span class="profile-des-right"
 								>knack for <span class="profile-des-hsl regular">backend development.</span><span
@@ -41,9 +41,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="scroll-dwn">
-		<ScrollDown />
-	</div>
+	<!-- <div class="scroll-dwn"> -->
+	<!-- 	<ScrollDown /> -->
+	<!-- </div> -->
 </div>
 
 <style>
@@ -55,11 +55,15 @@
 	.profile-container {
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
-		grid-template-rows: minmax(500px, auto) minmax(200px, auto);
-		height: calc(100vh - 80px);
-		min-height: 650px;
+		/* grid-template-rows: minmax(500px, auto) minmax(200px, auto); */
+		grid-template-rows: auto;
+		/* height: calc(100vh - 80px); */
+		/* min-height: 650px; */
 		/* padding-top: 50px; */
 		/* padding-bottom: 180px; */
+		margin-top: clamp(100px, 6.3vw, 200px);
+		margin-bottom: 135px;
+		margin-bottom: clamp(135px, 5vw, 200px);
 	}
 	.profile-link-container {
 		display: flex;
@@ -162,7 +166,7 @@
 	.profile-name {
 		font-size: 4.4rem;
 		color: var(--profile-name-color);
-		margin: 1rem 0 3rem 0;
+		margin: 0.5rem 0 3rem 0;
 	}
 	.profile-content {
 		display: flex;
@@ -178,8 +182,8 @@
 		/* padding-bottom: 1vh; */
 	}
 	.profile-picture-clip {
-		padding: 50px 50px 0 50px;
-		clip-path: circle(110px at center);
+		padding: 45px 50px 0 50px;
+		clip-path: circle(90px at center);
 		background: var(--profile-picture-clip-bg-gradient-color);
 	}
 
@@ -189,8 +193,8 @@
 
 	img.profile-pic {
 		width: 100%;
-		max-width: calc(9vw + 40px);
-		min-width: 190px;
+		max-width: calc(7vw + 20px);
+		min-width: 150px;
 		filter: var(--profile-picture-filter);
 		/* border-radius: 50%; */
 	}
@@ -201,8 +205,8 @@
 			justify-content: center;
 		}
 		.profile-picture-clip {
-			padding: 42px 50px 0 50px;
-			clip-path: circle(83px at center);
+			padding: 60px 50px 0 50px;
+			clip-path: circle(100px at center);
 		}
 		.profile-detail {
 			display: flex;
@@ -210,6 +214,7 @@
 			align-items: center;
 			margin-right: 0;
 			margin-left: 0;
+			margin-top: 3rem;
 		}
 		.profile-description {
 			text-align: center;
@@ -221,10 +226,10 @@
 			align-self: center;
 		}
 		.profile-container {
-			grid-template-rows: minmax(600px, auto) minmax(200px, auto);
+			/* grid-template-rows: minmax(600px, auto) minmax(200px, auto); */
 			/* grid-template-rows: minmax(475px, auto) minmax(200px, auto); */
-			grid-gap: 30px 0px;
-			height: auto;
+			/* grid-gap: 30px 0px; */
+			/* height: auto; */
 		}
 		img.profile-pic {
 			min-width: 150px;
@@ -232,13 +237,13 @@
 	}
 	@media only screen and (max-width: 850px) {
 		.profile-container {
-			display: grid;
 			grid-template-columns: 1fr auto 1fr;
-			grid-template-rows: minmax(475px, auto) auto;
-			height: calc(100vh - 80px);
-			min-height: 650px;
+			/* grid-template-rows: minmax(475px, auto) auto; */
+			/* height: calc(100vh - 80px); */
+			/* min-height: 650px; */
 			/* padding-top: 50px; */
 			/* padding-bottom: 180px; */
+			/* margin-top: 100px; */
 		}
 	}
 	@media only screen and (max-width: 650px) {
@@ -282,6 +287,9 @@
 		}
 		img.profile-pic {
 			min-width: 130px;
+		}
+		.profile-role {
+			font-size: 1.8rem;
 		}
 	}
 	@media only screen and (max-width: 650px) {

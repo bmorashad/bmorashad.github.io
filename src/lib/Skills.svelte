@@ -66,7 +66,7 @@
 		color: var(--skill-tag-color);
 	}
 	.tag-tech {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		font-weight: 600;
 	}
 	@media only screen and (max-width: 950px) {

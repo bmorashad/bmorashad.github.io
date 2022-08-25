@@ -46,11 +46,12 @@
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 8rem;
+		margin-bottom: clamp(45px, 5vw, 85px);
 	}
 	.works-wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		grid-gap: 30px;
+		grid-gap: 20px;
 	}
 	.work-card {
 		background: var(--work-card-bg-color);
@@ -108,7 +109,7 @@
 	@media only screen and (max-width: 1000px) {
 		.works-wrapper {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			grid-gap: 18px 20px;
+			grid-gap: 15px 15px;
 		}
 	}
 	@media only screen and (max-width: 850px) {
@@ -140,6 +141,9 @@
 		}
 		.works-container {
 			margin-top: 5rem;
+		}
+		.works-wrapper {
+			grid-gap: 12px 12px;
 		}
 	}
 </style>

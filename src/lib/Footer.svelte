@@ -26,6 +26,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin-top: 20rem;
+		margin-top: clamp(120px, 20vw, 200px);
 		background: var(--footer-bg-color);
 	}
 	.footer-item {
@@ -60,7 +61,7 @@
 	}
 	@media only screen and (max-width: 950px) {
 		.footer {
-			margin-top: 15rem;
+			/* margin-top: 15rem; */
 		}
 		.footer-item {
 			padding: 3rem 5vw;

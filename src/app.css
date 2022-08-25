@@ -18,6 +18,11 @@
 	--profile-link-linkedin-bg-color: rgba(40, 103, 178, 0.1);
 	--profile-link-medium-bg-color: rgba(0, 0, 0, 0.1);
 
+	--profile-link-gitlab-bg-color: rgba(255, 255, 255, 0.2);
+	--profile-link-github-bg-color: rgba(255, 255, 255, 0.2);
+	--profile-link-linkedin-bg-color: rgba(255, 255, 255, 0.2);
+	--profile-link-medium-bg-color: rgba(255, 255, 255, 0.2);
+
 	--profile-link-gitlab-border: 2px solid var(--profile-link-gitlab-color);
 	--profile-link-github-border: 2px solid var(--profile-link-github-color);
 	--profile-link-linkedin-border: 2px solid var(--profile-link-linkedin-color);
@@ -49,7 +54,7 @@
 	--social-link-hover-color: #fff;
 
 	--content-title-hsl-color1: #0094ff;
-	--content-title-hsl-color2: #884fc1;
+	--content-title-hsl-color2: #7058f5;
 	--education-content-title-hsl-color: #0094ff;
 	--content-title-color: #3b5462;
 	--content-des-color: #3b5462;
@@ -99,7 +104,7 @@
 	--footer-label-color: #d3efff;
 
 	--work-card-border: 1px solid #a2c6e3;
-	--work-card-bg-color: rgba(255, 255, 255, 0.4);
+	--work-card-bg-color: rgba(255, 255, 255, 0.6);
 	--work-heading-color: #2c719b;
 	--work-des-color: #3c4146;
 
@@ -192,6 +197,7 @@
 	--social-link-hover-color: #fff;
 
 	--content-title-hsl-color1: #d38dff;
+	--content-title-hsl-color1: #49ccff;
 	--content-title-hsl-color2: #617bff;
 	--education-content-title-hsl-color: #617bff;
 	--content-title-color: #e6f6ff;
@@ -231,8 +237,10 @@
 
 	--work-card-border: 1px solid #36414c;
 	--work-card-bg-color: rgb(25 40 52);
+	--work-card-bg-color: rgb(45 67 84);
 	--work-heading-color: #03b38b;
-	--work-des-color: #d6e9f9;
+	/* --work-des-color: #d6e9f9; */
+	--work-des-color: #f2f9ff;
 
 	--contact-email-bg-color: rgba(32, 44, 54, 0.65);
 	--contact-email-color: hsl(0, 55%, 83%);
@@ -284,6 +292,11 @@ html {
 	font-size: 10px;
 	font-family: 'Lexend Deca', sans-serif;
 }
+
+button {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
 body {
 	/* height: 100vh; */
 	max-height: 100%;
@@ -291,9 +304,6 @@ body {
 	background: linear-gradient(180deg, rgba(195, 239, 249, 0.28) 0%, rgba(244, 248, 251, 0) 100%),
 		F4F8FB;
 	background: var(--background);
-}
-button {
-	font-family: 'Lexend Deca', sans-serif;
 }
 
 section {
@@ -323,11 +333,13 @@ section {
 }
 
 .content {
+	margin: auto;
+	max-width: 1440px;
 	padding: 0px clamp(10px, 10vw, 170px);
 }
 
 .content-title {
-	font-size: 3.8rem;
+	font-size: 3.6rem;
 	margin-bottom: 3rem;
 	font-weight: 500;
 	color: var(--content-title-color);

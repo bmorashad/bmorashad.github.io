@@ -19,9 +19,9 @@
 		}
 		darkMode = !darkMode;
 	};
-	/* onMount(async () => {
-		toggleMode();
-	}); */
+	// onMount(async () => {
+	// 	toggleMode();
+	// });
 </script>
 
 <svelte:head>
