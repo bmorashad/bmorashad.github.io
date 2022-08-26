@@ -1,6 +1,6 @@
 <script>
 	export let darkMode = false;
-	import { contactLinks } from '../../public/data.json';
+	import { contactLinks } from '/src/data.json';
 	let email = 'bmorashad@gmail.com';
 	import linkedinDMIcon from '../assets/linkedinDM.svg';
 	import emailIcon from '../assets/email.svg';

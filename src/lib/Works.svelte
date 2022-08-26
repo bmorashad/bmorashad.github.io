@@ -1,6 +1,6 @@
 <script>
 	export let darkMode = false;
-	import { works, socialLinks } from '../../public/data.json';
+	import { works, socialLinks } from '/src/data.json';
 	import ExternalLink from '../lib/ExternalLink.svelte';
 	import ExternalLinkHover from '../lib/ExternalLinkHover.svelte';
 

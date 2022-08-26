@@ -1,5 +1,5 @@
 <script>
-	import { socialLinks } from '../../public/data.json';
+	import { socialLinks } from '/src/data.json';
 	import gitlab from '../assets/gitlab-white.svg';
 	import github from '../assets/github-white.svg';
 	import linkedin from '../assets/linkedin-white.svg';

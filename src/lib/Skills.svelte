@@ -1,5 +1,5 @@
 <script>
-	import { skills } from '../../public/data.json';
+	import { skills } from '/src/data.json';
 </script>
 
 <section class="skills-container" id="skills">
