@@ -18,14 +18,14 @@
 	<div class="works-wrapper">
 		{#each works as work}
 			<div class="work-card">
-				<div class="work-heading">
-					<a href={work.link} class="work-name-link">
+				<a href={work.link} class="work-heading" target="_blank">
+					<div class="work-name-link">
 						<h3 class="work-name">{work.name}</h3>
-					</a>
-					<a href={work.link} class="external-link-icon">
+					</div>
+					<div class="external-link-icon">
 						<ExternalLink {darkMode} />
-					</a>
-				</div>
+					</div>
+				</a>
 				<div class="work-des">{work.description}</div>
 			</div>
 		{/each}
@@ -69,6 +69,10 @@
 	.work-heading {
 		padding: 2rem 3rem;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		position: relative;
+		color: var(--work-heading-color);
 	}
 	.work-heading h3 {
 		font-size: 1.9rem;
@@ -80,12 +84,7 @@
 		font-size: 1.6rem;
 		color: var(--work-des-color);
 	}
-	.work-heading {
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	a.external-link-icon {
+	.external-link-icon {
 		display: flex;
 		margin-left: auto;
 		position: absolute;
@@ -95,13 +94,14 @@
 		/* background: #2c719b; */
 		border-radius: 50%;
 	}
-	a.work-name-link {
+	.work-name-link {
 		color: var(--work-heading-color);
 	}
-	.work-heading:hover > a.work-name-link {
+
+	.work-heading:hover {
 		text-decoration-thickness: 2px;
 	}
-	.work-heading:hover > a.external-link-icon {
+	.work-heading:hover > .external-link-icon {
 		right: 16px;
 		top: 16px;
 		transition: 50ms;

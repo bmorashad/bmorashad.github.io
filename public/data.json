@@ -3,22 +3,22 @@
 		{
 			"name": "Genimen",
 			"description": "A machine learning group project that analysis mobile phone reviews",
-			"link": "https://github/bmorashad/project-genimen"
+			"link": "https://github.com/manthilaDev/project-genimen"
 		},
 		{
 			"name": "Google batch translate",
 			"description": "Simple script that lets you translate  batch of text in json format using  Google Translate API. ",
-			"link": "https://github/bmorashad/dev-scripts/"
+			"link": "https://github.com/bmorashad/dev-scripts/tree/main/google-batch-translate"
 		},
 		{
 			"name": "Dot Files",
 			"description": "This contains my linux scripts, and configuration files for neovim,  vscode, tmux, bash, fish, kitty, etc",
-			"link": "https://github/bmorashad/dotfiles"
+			"link": "https://github.com/bmorashad/dotfiles"
 		},
 		{
 			"name": "PKCE OAuth in React",
 			"description": "This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK",
-			"link": "https://github/bmorashad/dotfiles"
+			"link": "https://github.com/bmorashad/oauth2-pkce-react-sample"
 		}
 	],
 	"contactLinks": {
