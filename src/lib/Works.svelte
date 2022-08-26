@@ -1,8 +1,15 @@
 <script>
 	export let darkMode = false;
-	import { works } from '../../public/data.json';
+	import { works, socialLinks } from '../../public/data.json';
 	import ExternalLink from '../lib/ExternalLink.svelte';
 	import ExternalLinkHover from '../lib/ExternalLinkHover.svelte';
+
+	let gitlabDetails = socialLinks.find((link) => {
+		return link.name.toLowerCase() === 'gitlab';
+	});
+	let githubDetails = socialLinks.find((link) => {
+		return link.name.toLowerCase() === 'github';
+	});
 </script>
 
 <section class="works-container" id="works">
@@ -29,10 +36,75 @@
 				<div class="work-des">{work.description}</div>
 			</div>
 		{/each}
+		<div class="more-works-card">
+			<h3 class="more-works-title">See More...</h3>
+			<div class="more-works-links">
+				<a href={gitlabDetails.link} target="_blank" class="gitlab-more-works">
+					<img src={gitlabDetails.iconColored} alt={gitlabDetails.name} />
+				</a>
+				<a href={githubDetails.link} target="_blank" class="github-more-works">
+					<img src={githubDetails.iconColored} alt={gitlabDetails.name} />
+				</a>
+			</div>
+		</div>
 	</div>
 </section>
 
 <style>
+	.more-works-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem;
+		box-shadow: inset var(--card-shadow);
+		background: rgba(255, 255, 255, 0.2);
+		gap: 25px;
+		border-radius: 10px;
+		border: var(--work-card-border);
+		max-height: max-content;
+	}
+
+	.more-works-title {
+		color: var(--content-des-color);
+		font-size: 2.2rem;
+	}
+
+	.more-works-links img {
+		width: 6rem;
+		/* border: 2px solid; */
+		border-radius: 10px;
+	}
+
+	.more-works-links img:hover {
+		transition: 0.15s;
+		transform: translateY(-2.5px);
+	}
+	.more-works-links img:active {
+		transition: 0.1s;
+		transform: translateY(0px);
+	}
+
+	.gitlab-more-works img {
+		background: var(--gitlab-color);
+	}
+	.github-more-works img {
+		background: var(--github-color);
+	}
+
+	.gitlab-more-works img:hover {
+		/* box-shadow: 0px 0px 15px hsl(29deg 54% 71%); */
+	}
+	.github-more-works img:hover {
+		/* box-shadow: 0px 0px 15px hsl(20deg 15% 54%); */
+	}
+
+	.more-works-links {
+		display: flex;
+		justify-content: center;
+		gap: 20%;
+	}
+
 	.works-container {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -108,7 +180,7 @@
 	}
 	@media only screen and (max-width: 1000px) {
 		.works-wrapper {
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 			grid-gap: 15px 15px;
 		}
 	}

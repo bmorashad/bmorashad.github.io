@@ -8,6 +8,9 @@
 	--profile-des-hsl-color: #001357;
 	--profile-des-color: #001357;
 
+	--gitlab-color: #fc6d26;
+	--github-color: #231e1b;
+
 	--profile-link-gitlab-color: #fc6d26;
 	--profile-link-github-color: #231e1b;
 	--profile-link-linkedin-color: #2867b2;
@@ -126,6 +129,8 @@
 
 	--contact-email-border-color: #ca4646;
 	--contact-linkedin-border-color: #2867b2;
+
+	--more-works-card-bg-color: rgba(255, 255, 255, 0.2);
 
 	--card-shadow: 0px 4px 10px 0px rgba(14, 60, 86, 0.06);
 	--shadow-color: 196deg 20% 63%;
@@ -260,6 +265,8 @@
 
 	--contact-email-border-color: hsl(0deg 18% 55%);
 	--contact-linkedin-border-color: hsl(213deg 22% 61%);
+
+	--more-works-card-bg-color: rgba(255, 255, 255, 0.18);
 
 	--card-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 	--shadow-color: 204deg 56% 3%;
