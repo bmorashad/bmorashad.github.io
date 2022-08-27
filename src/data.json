@@ -2,22 +2,22 @@
 	"works": [
 		{
 			"name": "Genimen",
-			"description": "A machine learning group project that analysis mobile phone reviews",
+			"description": "A machine learning group project that analysis smart phone reviews. This gives various feedback for smart phones and categorically analyse them. This is a MVP and can be further extended to support other products",
 			"link": "https://github.com/manthilaDev/project-genimen"
 		},
 		{
 			"name": "Google batch translate",
-			"description": "Simple script that lets you translate  batch of text in json format using  Google Translate API. ",
+			"description": "Simple script that lets you translate  batch of text in json format using  Google Translate API. This was done to help add locale support to a react app I was contributing to.",
 			"link": "https://github.com/bmorashad/dev-scripts/tree/main/google-batch-translate"
 		},
 		{
 			"name": "Dot Files",
-			"description": "This contains my linux scripts, and configuration files for neovim,  vscode, tmux, bash, fish, kitty, etc",
+			"description": "This contains my linux scripts, cli-tools and configuration files for neovim, tmux, fish, etc.",
 			"link": "https://github.com/bmorashad/dotfiles"
 		},
 		{
 			"name": "PKCE OAuth in React",
-			"description": "This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK",
+			"description": "This is a simple react project for reference purposes, that implements  PKCE OAuth flow from scratch without any SDK with an API to support token refresh logic.",
 			"link": "https://github.com/bmorashad/oauth2-pkce-react-sample"
 		}
 	],
