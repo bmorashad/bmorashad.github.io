@@ -1,11 +1,7 @@
 <script>
 	import { socialLinks } from '/src/data.json';
-	import profilePic from '../assets/profile_pic.png';
-	import gitlab from '../assets/gitlab.svg';
-	import github from '../assets/github.svg';
-	import linkedin from '../assets/linkedin.svg';
-	import medium from '../assets/medium.svg';
-	import ScrollDown from '../lib/ScrollDown.svelte';
+	import profilePic from '../../assets/profile_pic.png';
+	import { getImageSrc } from '../utils/utils';
 </script>
 
 <div class="profile-container">
@@ -33,7 +29,7 @@
 				<div class="profile-link-container">
 					{#each socialLinks as link}
 						<a href={link.link} target="_blank" class={`profile-link ${link.className}`}>
-							<img src={link.iconColored} alt={link.name} />
+							<img src={getImageSrc(link.iconColored)} alt={link.name} />
 							<span class="profile-link-name">{link.name}</span>
 						</a>
 					{/each}

@@ -1,8 +1,8 @@
 <script>
 	export let darkMode = false;
 	import { works, socialLinks } from '/src/data.json';
-	import ExternalLink from '../lib/ExternalLink.svelte';
-	import ExternalLinkHover from '../lib/ExternalLinkHover.svelte';
+	import ExternalLink from '../components/ExternalLink.svelte';
+	import ExternalLinkHover from '../components/ExternalLinkHover.svelte';
 
 	let gitlabDetails = socialLinks.find((link) => {
 		return link.name.toLowerCase() === 'gitlab';

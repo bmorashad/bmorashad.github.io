@@ -1,9 +1,6 @@
 <script>
 	import { socialLinks } from '/src/data.json';
-	import gitlab from '../assets/gitlab-white.svg';
-	import github from '../assets/github-white.svg';
-	import linkedin from '../assets/linkedin-white.svg';
-	import medium from '../assets/medium-white.svg';
+	import { getImageSrc } from '../utils/utils';
 </script>
 
 <div class="footer">
@@ -14,7 +11,7 @@
 		<div class="footer-link-wrapper">
 			{#each socialLinks as link}
 				<a href={link.link} target="_blank" class={`link link-${link.className}`}>
-					<img src={link.iconWhite} alt={link.name} />
+					<img src={getImageSrc(link.iconWhite)} alt={link.name} />
 				</a>
 			{/each}
 		</div>

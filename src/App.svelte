@@ -1,12 +1,12 @@
 <script>
 	import sun from './assets/sun.svg';
 	import moon from './assets/moon.svg';
-	import Skills from './lib/Skills.svelte';
-	import Education from './lib/Education.svelte';
-	import ProfileIntro from './lib/ProfileIntro.svelte';
-	import Footer from './lib/Footer.svelte';
-	import Works from './lib/Works.svelte';
-	import Contact from './lib/Contact.svelte';
+	import Skills from './lib/components/Skills.svelte';
+	import Education from './lib/components/Education.svelte';
+	import ProfileIntro from './lib/components/ProfileIntro.svelte';
+	import Footer from './lib/components/Footer.svelte';
+	import Works from './lib/components/Works.svelte';
+	import Contact from './lib/components/Contact.svelte';
 	import { onMount } from 'svelte';
 
 	let darkMode = false;

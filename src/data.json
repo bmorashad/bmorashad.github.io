@@ -35,29 +35,29 @@
 		{
 			"name": "Gitlab",
 			"link": "https://gitlab.com/bmorashad",
-			"iconColored": "/src/assets/gitlab.svg",
-			"iconWhite": "/src/assets/gitlab-white.svg",
+			"iconColored": "gitlab.svg",
+			"iconWhite": "gitlab-white.svg",
 			"className": "gitlab"
 		},
 		{
 			"name": "Github",
 			"link": "https://github.com/bmorashad",
-			"iconColored": "/src/assets/github.svg",
-			"iconWhite": "/src/assets/github-white.svg",
+			"iconColored": "github.svg",
+			"iconWhite": "github-white.svg",
 			"className": "github"
 		},
 		{
 			"name": "LinkedIn",
 			"link": "https://www.linkedin.com/in/bmorashad/",
-			"iconColored": "/src/assets/linkedin.svg",
-			"iconWhite": "/src/assets/linkedin-white.svg",
+			"iconColored": "linkedin.svg",
+			"iconWhite": "linkedin-white.svg",
 			"className": "linkedin"
 		},
 		{
 			"name": "Medium",
 			"link": "https://bmorashad.medium.com/",
-			"iconColored": "/src/assets/medium.svg",
-			"iconWhite": "/src/assets/medium-white.svg",
+			"iconColored": "medium.svg",
+			"iconWhite": "medium-white.svg",
 			"className": "medium-blog"
 		}
 	],
