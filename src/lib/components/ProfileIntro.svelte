@@ -290,12 +290,15 @@
 	}
 	@media only screen and (max-width: 650px) {
 		.profile-name {
-			font-size: 4rem;
+			/* font-size: 4.4rem; */
 			max-width: 8ch;
 			text-align: center;
 		}
 	}
 	@media only screen and (max-width: 450px) {
+		.profile-name {
+			font-size: 4rem;
+		}
 		.scroll-dwn {
 			display: none;
 			height: 0px;
