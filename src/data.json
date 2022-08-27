@@ -2,7 +2,7 @@
 	"works": [
 		{
 			"name": "Genimen",
-			"description": "A machine learning group project that analysis smart phone reviews. This gives various feedback for smart phones and categorically analyse them. This is a MVP and can be further extended to support other products",
+			"description": "Machine learning group project that analysis smart phone reviews. This gives various feedback for smart phones and categorically analyse them. This is a MVP and can be further extended to support other products",
 			"link": "https://github.com/manthilaDev/project-genimen"
 		},
 		{
