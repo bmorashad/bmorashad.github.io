@@ -58,21 +58,44 @@
 <Footer />
 
 <style>
+	/* .light-theme-toggle { */
+	/* 	width: 4rem; */
+	/* 	height: 4rem; */
+	/* 	opacity: 0.75; */
+	/* 	cursor: pointer; */
+	/* 	margin-left: 4rem; */
+	/* 	padding: 0.6rem; */
+	/* 	border-radius: 50%; */
+	/* 	background: #172531; */
+	/* } */
 	.light-theme-toggle {
-		width: 3rem;
-		opacity: 0.85;
+		width: 2.9rem;
+		opacity: 0.75;
 		cursor: pointer;
-		margin-left: 1rem;
+		margin-left: 2rem;
 	}
 	.light-theme-toggle:hover {
-		opacity: 1;
+		opacity: 0.85;
 	}
+
+	/* .dark-theme-toggle { */
+	/* 	width: 4rem; */
+	/* 	height: 4rem; */
+	/* 	opacity: 0.75; */
+	/* 	cursor: pointer; */
+	/* 	margin-left: 4rem; */
+	/* 	padding: 0.6rem; */
+	/* 	border-radius: 50%; */
+	/* 	background: #172531; */
+	/* } */
+
 	.dark-theme-toggle {
 		width: 3rem;
 		opacity: 0.95;
 		cursor: pointer;
-		margin-left: 1rem;
+		margin-left: 2rem;
 	}
+
 	.dark-theme-toggle:hover {
 		opacity: 1;
 	}

@@ -50,6 +50,9 @@
 
 	--navbar-bg-color: #0075ff;
 	--navbar-border-color: #90e6ff;
+	/* New Colors */
+	--navbar-bg-color: #0b72cf;
+	--navbar-border-color: #5ec5e1;
 
 	--menu-link-color: #e9f3ff;
 	--menu-link-hover-color: #fff;
@@ -195,6 +198,9 @@
 
 	--navbar-bg-color: #003d63;
 	--navbar-border-color: #00c1aa;
+	/* New Colors */
+	--navbar-bg-color: #03283e;
+	--navbar-border-color: #2e4e4b;
 
 	--menu-link-color: #00bf7a;
 	--menu-link-hover-color: #00da8b;
