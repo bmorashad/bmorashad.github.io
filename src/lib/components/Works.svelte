@@ -3,6 +3,7 @@
 	import { works, socialLinks } from '/src/data.json';
 	import ExternalLink from '../components/ExternalLink.svelte';
 	import ExternalLinkHover from '../components/ExternalLinkHover.svelte';
+import { getImageSrc } from '../utils/utils';
 
 	let gitlabDetails = socialLinks.find((link) => {
 		return link.name.toLowerCase() === 'gitlab';
@@ -40,10 +41,10 @@
 			<h3 class="more-works-title">See More...</h3>
 			<div class="more-works-links">
 				<a href={gitlabDetails.link} target="_blank" class="gitlab-more-works">
-					<img src={gitlabDetails.iconColored} alt={gitlabDetails.name} />
+					<img src={getImageSrc(gitlabDetails.iconColored)} alt={gitlabDetails.name} />
 				</a>
 				<a href={githubDetails.link} target="_blank" class="github-more-works">
-					<img src={githubDetails.iconColored} alt={gitlabDetails.name} />
+					<img src={getImageSrc(githubDetails.iconColored)} alt={gitlabDetails.name} />
 				</a>
 			</div>
 		</div>
