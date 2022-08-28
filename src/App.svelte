@@ -1,6 +1,8 @@
 <script>
 	import sun from './assets/sun.svg';
 	import moon from './assets/moon.svg';
+	import hamburger from './assets/hamburger.svg';
+	import close from './assets/close.svg';
 	import Skills from './lib/components/Skills.svelte';
 	import Education from './lib/components/Education.svelte';
 	import ProfileIntro from './lib/components/ProfileIntro.svelte';
@@ -8,6 +10,7 @@
 	import Works from './lib/components/Works.svelte';
 	import Contact from './lib/components/Contact.svelte';
 	import { onMount } from 'svelte';
+	import HamburgerMenuIcon from './lib/components/HamburgerMenuIcon.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -22,6 +25,16 @@
 	// onMount(async () => {
 	// 	toggleMode();
 	// });
+	let displayHamburgerMenu = false;
+	let hamburgerMenuIcon = hamburger;
+	const hamburgerClick = () => {
+		displayHamburgerMenu = !displayHamburgerMenu;
+		if (displayHamburgerMenu) {
+			hamburgerMenuIcon = close;
+		} else {
+			hamburgerMenuIcon = hamburger;
+		}
+	};
 </script>
 
 <svelte:head>
@@ -33,9 +46,15 @@
 
 <div class="nav-container">
 	<nav>
-		<a href="#skills" class="menu-link">Skills</a>
-		<a href="#works" class="menu-link">Works</a>
-		<a href="#contact" class="menu-link">Contact</a>
+		<div class="hamburger-wrapper" on:click={hamburgerClick}>
+			<HamburgerMenuIcon close={!displayHamburgerMenu} />
+			Menu
+		</div>
+		<div class="large-menu-link-container">
+			<a href="#skills" class="menu-link">Skills</a>
+			<a href="#works" class="menu-link">Works</a>
+			<a href="#contact" class="menu-link">Contact</a>
+		</div>
 		<div class="theme-toggle" on:click={toggleMode}>
 			{#if !darkMode}
 				<img class="dark-theme-toggle" src={moon} alt="" />
@@ -44,6 +63,13 @@
 			{/if}
 		</div>
 	</nav>
+	{#if displayHamburgerMenu}
+		<div class="nav-menu-small">
+			<a href="#skills" class="menu-link-small">Skills</a>
+			<a href="#works" class="menu-link-small">Works</a>
+			<a href="#contact" class="menu-link-small">Contact</a>
+		</div>
+	{/if}
 </div>
 <main>
 	<section class="profile-section">
@@ -58,42 +84,59 @@
 <Footer />
 
 <style>
-	/* .light-theme-toggle { */
-	/* 	width: 4rem; */
-	/* 	height: 4rem; */
-	/* 	opacity: 0.75; */
-	/* 	cursor: pointer; */
-	/* 	margin-left: 4rem; */
-	/* 	padding: 0.6rem; */
-	/* 	border-radius: 50%; */
-	/* 	background: #172531; */
-	/* } */
+	.menu-link-small {
+		font-size: 1.8rem;
+		font-weight: 700;
+		padding: 2rem 3rem;
+		color: var(--menu-link-color);
+		text-decoration: none;
+	}
+	.menu-link:hover {
+		color: var(--menu-link-hover-color);
+	}
+	.nav-menu-small {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		background: var(--navbar-small-bg-color);
+		position: relative;
+		z-index: 9999;
+	}
+	.hamburger-wrapper {
+		position: absolute;
+		left: 0;
+		padding: 3rem;
+		height: 100%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		font-size: 2rem;
+		font-weight: 700;
+		color: #fff;
+	}
+	.hamburger-wrapper img {
+		width: 13%;
+	}
+	.hamburger-wrapper:hover {
+		/* background: #000; */
+	}
 	.light-theme-toggle {
 		width: 2.9rem;
 		opacity: 0.75;
 		cursor: pointer;
-		margin-left: 2rem;
+		margin-left: 3rem;
 	}
 	.light-theme-toggle:hover {
 		opacity: 0.85;
 	}
 
-	/* .dark-theme-toggle { */
-	/* 	width: 4rem; */
-	/* 	height: 4rem; */
-	/* 	opacity: 0.75; */
-	/* 	cursor: pointer; */
-	/* 	margin-left: 4rem; */
-	/* 	padding: 0.6rem; */
-	/* 	border-radius: 50%; */
-	/* 	background: #172531; */
-	/* } */
-
 	.dark-theme-toggle {
 		width: 3rem;
 		opacity: 0.95;
 		cursor: pointer;
-		margin-left: 2rem;
+		margin-left: 3rem;
 	}
 
 	.dark-theme-toggle:hover {
@@ -105,6 +148,7 @@
 		/* justify-content: center; */
 	}
 	nav {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		z-index: 1;
