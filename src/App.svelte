@@ -12,19 +12,39 @@
 	import { onMount } from 'svelte';
 	import HamburgerMenu from './lib/components/HamburgerMenu.svelte';
 
+	const MODE_LOCAL_STORAGE_KEY = 'mode';
+	const Modes = {
+		DARK: 'dark',
+		LIGHT: 'light'
+	};
+
 	let darkMode = false;
 	let toggleMode = () => {
 		let dataTheme = document.documentElement.getAttribute('data-theme');
 		if (dataTheme != 'dark') {
 			document.documentElement.setAttribute('data-theme', 'dark');
+			localStorage.setItem(MODE_LOCAL_STORAGE_KEY, Modes.DARK);
 		} else {
 			document.documentElement.setAttribute('data-theme', '');
+			localStorage.setItem(MODE_LOCAL_STORAGE_KEY, Modes.light);
 		}
 		darkMode = !darkMode;
 	};
-	// onMount(async () => {
-	// 	toggleMode();
-	// });
+	let switchMode = (mode) => {
+		if (mode === Modes.DARK) {
+			document.documentElement.setAttribute('data-theme', mode);
+			darkMode = true;
+		} else if (mode === Modes.LIGHT) {
+			document.documentElement.setAttribute('data-theme', mode);
+			darkMode = false;
+		}
+	};
+	onMount(async () => {
+		let preferedMode = localStorage.getItem(MODE_LOCAL_STORAGE_KEY);
+		if (preferedMode) {
+			switchMode(preferedMode);
+		}
+	});
 	let displayHamburgerMenu = false;
 	let hamburgerMenuIcon = hamburger;
 	const hamburgerClick = (e) => {
