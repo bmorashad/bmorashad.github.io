@@ -94,7 +94,7 @@
 
 <style>
 	.container {
-		margin-top: clamp(170px, 10vw, 200px);
+		/* margin-top: clamp(170px, 10vw, 200px); */
 	}
 	.menu-link-small:hover {
 		color: var(--menu-link-hover-color);
@@ -159,6 +159,7 @@
 		/* display: flex; */
 		/* justify-content: center; */
 		position: fixed;
+		position: sticky;
 		top: 0;
 		z-index: 999;
 		width: 100%;
@@ -256,8 +257,8 @@
 		}
 	}
 	@media only screen and (max-width: 450px) {
-		.container {
-			margin-top: 120px;
-		}
+		/* .container { */
+		/* 	margin-top: 120px; */
+		/* } */
 	}
 </style>
