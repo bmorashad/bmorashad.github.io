@@ -52,12 +52,23 @@
 	--navbar-border-color: #90e6ff;
 	/* New Colors */
 	--navbar-bg-color: #0b72cf;
+	--navbar-border-color: #233583;
 	--navbar-border-color: #5ec5e1;
 
 	--navbar-small-bg-color: hsl(208, 90%, 39%);
+	--navbar-small-bg-color: #085ba7;
+	--navbar-small-bg-color: linear-gradient(45deg, #003b8d, #036b83);
+
+	--hamburger-menu-bg-color: hsl(209deg 91% 39%);
+	--hamburger-menu-bg-hover-color: hsl(209deg 91% 35%);
+
+	--nav-icon-wrapper-bg-color: hsl(209deg 91% 39%);
+	--nav-icon-wrapper-bg-hover-color: hsl(209deg 91% 35%);
 
 	--menu-link-color: #e9f3ff;
 	--menu-link-hover-color: #fff;
+
+	--menu-link-small-border-color: #233583;
 
 	--social-link-hover-color: #fff;
 
@@ -203,9 +214,22 @@
 	/* New Colors */
 	--navbar-bg-color: #03283e;
 	--navbar-border-color: #2e4e4b;
+	--navbar-border-color: #060b1e;
+
+	--navbar-small-bg-color: hsl(202, 91%, 11%);
+	--navbar-small-bg-color: linear-gradient(45deg, #042132, #240752);
+
+	--hamburger-menu-bg-color: hsl(202deg 92% 18%);
+	--hamburger-menu-bg-hover-color: hsl(202deg 92% 21%);
+
+	--nav-icon-wrapper-bg-color: hsl(202deg 92% 18%);
+	--nav-icon-wrapper-bg-hover-color: hsl(202deg 92% 21%);
 
 	--menu-link-color: #00bf7a;
 	--menu-link-hover-color: #00da8b;
+
+	--menu-link-small-border-color: #88da9b;
+	--menu-link-small-border-color: #060b1e;
 
 	--social-link-hover-color: #fff;
 
@@ -414,7 +438,8 @@ text-fill-color: transparent; */
 .text-center {
 	text-align: center;
 }
-/* Responsive */
+
+/* Media Queries Responsive */
 
 @media only screen and (max-width: 1000px) {
 	html {

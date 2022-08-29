@@ -10,7 +10,7 @@
 	import Works from './lib/components/Works.svelte';
 	import Contact from './lib/components/Contact.svelte';
 	import { onMount } from 'svelte';
-	import HamburgerMenuIcon from './lib/components/HamburgerMenuIcon.svelte';
+	import HamburgerMenu from './lib/components/HamburgerMenu.svelte';
 
 	let darkMode = false;
 	let toggleMode = () => {
@@ -27,8 +27,8 @@
 	// });
 	let displayHamburgerMenu = false;
 	let hamburgerMenuIcon = hamburger;
-	const hamburgerClick = () => {
-		displayHamburgerMenu = !displayHamburgerMenu;
+	const hamburgerClick = (e) => {
+		displayHamburgerMenu = e.detail.displayHamburgerMenu;
 		if (displayHamburgerMenu) {
 			hamburgerMenuIcon = close;
 		} else {
@@ -46,10 +46,7 @@
 
 <div class="nav-container">
 	<nav>
-		<div class="hamburger-wrapper" on:click={hamburgerClick}>
-			<HamburgerMenuIcon close={!displayHamburgerMenu} />
-			Menu
-		</div>
+		<HamburgerMenu on:click={hamburgerClick} />
 		<div class="large-menu-link-container">
 			<a href="#skills" class="menu-link">Skills</a>
 			<a href="#works" class="menu-link">Works</a>
@@ -63,15 +60,27 @@
 			{/if}
 		</div>
 	</nav>
-	{#if displayHamburgerMenu}
-		<div class="nav-menu-small">
-			<a href="#skills" class="menu-link-small">Skills</a>
-			<a href="#works" class="menu-link-small">Works</a>
-			<a href="#contact" class="menu-link-small">Contact</a>
-		</div>
-	{/if}
+	<!-- {#if displayHamburgerMenu} -->
+	<div class={`nav-menu-small`}>
+		<a
+			href="#skills"
+			class={`menu-link-small ${displayHamburgerMenu ? 'collapsed expanded' : 'collapsed'}`}
+			>Skills</a
+		>
+		<a
+			href="#works"
+			class={`menu-link-small ${displayHamburgerMenu ? 'collapsed expanded' : 'collapsed'}`}
+			>Works</a
+		>
+		<a
+			href="#contact"
+			class={`menu-link-small ${displayHamburgerMenu ? 'collapsed expanded' : 'collapsed'}`}
+			>Contact</a
+		>
+	</div>
+	<!-- {/if} -->
 </div>
-<main>
+<main class="container">
 	<section class="profile-section">
 		<ProfileIntro />
 		<div class="content">
@@ -84,15 +93,36 @@
 <Footer />
 
 <style>
+	.container {
+		margin-top: clamp(170px, 10vw, 200px);
+	}
+	.menu-link-small:hover {
+		color: var(--menu-link-hover-color);
+		text-decoration: underline;
+		transition: 0.1s;
+		text-decoration-style: dotted;
+	}
 	.menu-link-small {
+		display: none;
 		font-size: 1.8rem;
 		font-weight: 700;
-		padding: 2rem 3rem;
 		color: var(--menu-link-color);
 		text-decoration: none;
+		padding: 0rem 3rem;
 	}
-	.menu-link:hover {
-		color: var(--menu-link-hover-color);
+	.collapsed {
+		opacity: 0;
+		height: 0;
+		padding: 0rem 3rem;
+		border-bottom: 0px solid var(--menu-link-small-border-color);
+		transition: all 0.2s;
+	}
+	.expanded {
+		opacity: 1;
+		transition: all 0.2s;
+		padding: 2rem 3rem;
+		border-bottom: 1px solid var(--menu-link-small-border-color);
+		height: auto;
 	}
 	.nav-menu-small {
 		display: flex;
@@ -103,30 +133,13 @@
 		position: relative;
 		z-index: 9999;
 	}
-	.hamburger-wrapper {
-		position: absolute;
-		left: 0;
-		padding: 3rem;
-		height: 100%;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		gap: 2rem;
-		font-size: 2rem;
-		font-weight: 700;
-		color: #fff;
-	}
-	.hamburger-wrapper img {
-		width: 13%;
-	}
-	.hamburger-wrapper:hover {
-		/* background: #000; */
+	.theme-toggle {
+		margin-left: 3rem;
 	}
 	.light-theme-toggle {
 		width: 2.9rem;
 		opacity: 0.75;
 		cursor: pointer;
-		margin-left: 3rem;
 	}
 	.light-theme-toggle:hover {
 		opacity: 0.85;
@@ -136,7 +149,6 @@
 		width: 3rem;
 		opacity: 0.95;
 		cursor: pointer;
-		margin-left: 3rem;
 	}
 
 	.dark-theme-toggle:hover {
@@ -146,6 +158,13 @@
 		height: 70px;
 		/* display: flex; */
 		/* justify-content: center; */
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		width: 100%;
+	}
+	main {
+		margin-bottom: 170px;
 	}
 	nav {
 		position: relative;
@@ -163,21 +182,82 @@
 	.menu-link {
 		/* border-radius: 21px; */
 		/* padding: 8px 30px; */
-		font-size: 2rem;
+		font-size: 1.85rem;
 		font-weight: 700;
 		/* color: #0075ff; */
 		color: var(--menu-link-color);
-		padding: 1rem 2.6rem;
+		padding: 1rem 2.5rem;
 		text-decoration: none;
 	}
 	.menu-link:hover {
 		color: var(--menu-link-hover-color);
 		text-decoration: underline;
 		transition: 0.1s;
+		text-decoration-style: dashed;
+	}
+	.theme-toggle:hover {
+		transition: 0.2s;
+		background: var(--hamburger-menu-bg-hover-color);
+	}
+	.theme-toggle {
+		background: var(--hamburger-menu-bg-color);
+		/* padding: 0.8rem; */
+		border-radius: 50%;
+		height: 36px;
+		width: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.light-theme-toggle {
+		width: 64%;
+	}
+	.dark-theme-toggle {
+		width: 68%;
 	}
 	@media only screen and (max-width: 650px) {
 		.menu-link {
-			padding: 1rem 1.2rem;
+			padding: 1rem 2.5rem;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.menu-link-small {
+			display: block;
+		}
+		.nav-container {
+			height: 65px;
+		}
+		.large-menu-link-container {
+			display: none;
+		}
+		.theme-toggle:hover {
+			transition: 0.2s;
+			background: var(--hamburger-menu-bg-hover-color);
+		}
+		.theme-toggle {
+			margin-left: auto;
+			margin-right: 3rem;
+			background: var(--hamburger-menu-bg-color);
+			/* padding: 0.8rem; */
+			border-radius: 50%;
+			height: 36px;
+			width: 36px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.light-theme-toggle {
+			width: 64%;
+			margin-left: 0;
+		}
+		.dark-theme-toggle {
+			width: 64%;
+			margin-left: 0;
+		}
+	}
+	@media only screen and (max-width: 450px) {
+		.container {
+			margin-top: 120px;
 		}
 	}
 </style>
